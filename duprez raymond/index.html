@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DUPREZ RAYMOND – Chauffagiste à Nice (06100) | Alpes-Maritimes</title>
+<meta name="description" content="DUPREZ RAYMOND, votre chauffagiste de confiance à Nice (06100) et dans les Alpes-Maritimes. Installation chaudière, dépannage, entretien, PAC. Devis gratuit, disponible 7j/7.">
+<meta name="keywords" content="chauffagiste Nice, chauffagiste 06100, installation chaudière Nice, dépannage chauffage Nice, entretien chaudière Alpes-Maritimes, PAC Nice, DUPREZ RAYMOND chauffagiste">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "DUPREZ RAYMOND",
+  "description": "Chauffagiste à Nice, Alpes-Maritimes. Installation, dépannage et entretien de chaudières, radiateurs, PAC.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "36 RUE PAUL BOUNIN",
+    "addressLocality": "Nice",
+    "postalCode": "06100",
+    "addressCountry": "FR"
+  },
+  "telephone": "0493844411",
+  "email": "frduprez@yahoo.fr",
+  "areaServed": "Alpes-Maritimes",
+  "openingHours": ["Mo-Fr 07:30-18:30","Sa 08:00-17:00"],
+  "identifier": "96970856900013"
+}
+</script>
+<style>
+:root {
+  --ink: #0d1b2a;
+  --ink2: #1a2b3c;
+  --stone: #f7f8fb;
+  --stone2: #eaecf1;
+  --white: #ffffff;
+  --border: #dde2ea;
+  --radius: 8px;
+  --teal: #1b3d6f;
+  --teal2: #142f56;
+  --teal-light: #e8edf5;
+  --amber: #c07028;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: var(--stone); color: var(--ink); font-weight: 400; overflow-x: hidden; }
+h1,h2,h3,h4,h5 { font-family: 'Raleway', sans-serif; font-weight: 700; color: var(--ink); }
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* DEMO BAR */
+.demo-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  background: #991b1b; height: 28px;
+  display: flex; align-items: center; overflow: hidden;
+}
+.demo-ticker {
+  display: flex; align-items: center; white-space: nowrap;
+  animation: ticker 18s linear infinite;
+  font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 600;
+  color: #fff; letter-spacing: 0.08em; text-transform: uppercase; gap: 60px;
+}
+@keyframes ticker {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}
+
+/* CERT BAR */
+.cert-bar {
+  position: fixed; top: 28px; left: 0; right: 0; z-index: 298;
+  background: var(--ink); height: 36px;
+  display: flex; align-items: center; justify-content: center; gap: 32px;
+  padding: 0 24px;
+}
+.cert-item {
+  display: flex; align-items: center; gap: 7px;
+  font-family: 'Inter', sans-serif; font-size: 0.58rem;
+  font-weight: 600; color: rgba(255,255,255,0.75); text-transform: uppercase; letter-spacing: 0.12em;
+}
+.cert-item svg { width: 14px; height: 14px; flex-shrink: 0; }
+@media(max-width:640px) { .cert-bar { display: none; } }
+
+/* HEADER */
+header {
+  position: fixed; top: 64px; left: 0; right: 0; z-index: 300;
+  background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 32px; height: 62px;
+}
+.logo { display: flex; flex-direction: column; gap: 1px; cursor: pointer; }
+.logo-name { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 1.05rem; color: var(--ink); letter-spacing: 0.02em; }
+.logo-sub { font-family: 'Inter', sans-serif; font-size: 0.55rem; font-weight: 600; color: var(--teal); text-transform: uppercase; letter-spacing: 0.14em; }
+nav { display: flex; align-items: center; gap: 4px; }
+.nav-btn {
+  font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.1em; padding: 7px 13px;
+  border: none; background: transparent; color: var(--ink); cursor: pointer;
+  border-radius: 5px; transition: all 0.2s;
+}
+.nav-btn:hover, .nav-btn.active { background: var(--teal-light); color: var(--teal); }
+.nav-urgence {
+  font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em; padding: 7px 14px;
+  background: #dc2626; color: white; border: none; border-radius: 5px; cursor: pointer;
+  transition: background 0.2s;
+}
+.nav-urgence:hover { background: #b91c1c; }
+.nav-devis {
+  font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em; padding: 8px 16px;
+  background: var(--teal); color: white; border: none; border-radius: 5px; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(27,61,111,0.25); transition: background 0.2s; margin-left: 4px;
+}
+.nav-devis:hover { background: var(--teal2); }
+.burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+.burger span { width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.3s; }
+.mob-menu {
+  position: fixed; top: 126px; left: 0; right: 0; z-index: 299;
+  background: white; border-bottom: 1px solid var(--border);
+  padding: 16px 24px; display: none; flex-direction: column; gap: 4px;
+}
+.mob-menu.open { display: flex; }
+.mob-btn {
+  font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.1em; padding: 11px 14px;
+  border: none; background: transparent; color: var(--ink); cursor: pointer;
+  border-radius: 5px; text-align: left; transition: all 0.2s;
+}
+.mob-btn:hover { background: var(--teal-light); color: var(--teal); }
+
+/* PAGE SYSTEM */
+.page { display: none; padding-top: 126px; min-height: 100vh; }
+.page.active { display: block; }
+@media(max-width:640px) { .page { padding-top: 90px; } }
+
+/* PAGE HEADER */
+.page-header {
+  background: var(--ink); padding: 56px 64px 52px;
+  border-bottom: 3px solid var(--teal);
+}
+.page-header .ph-label {
+  font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.16em; color: var(--amber); margin-bottom: 12px;
+}
+.page-header h1 { font-size: 2.4rem; color: white; margin-bottom: 10px; }
+.page-header h2 { font-size: 2.2rem; color: white; margin-bottom: 10px; }
+.page-header p { font-size: 0.9rem; color: rgba(255,255,255,0.65); max-width: 560px; }
+
+/* BUTTONS */
+.btn-primary {
+  display: inline-block; padding: 13px 32px; font-family: 'Inter', sans-serif;
+  font-weight: 700; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+  background: var(--teal); color: white; border: none; border-radius: 6px; cursor: pointer;
+  box-shadow: 0 3px 12px rgba(27,61,111,0.3); transition: all 0.2s;
+}
+.btn-primary:hover { background: var(--teal2); transform: translateY(-1px); }
+.btn-outline {
+  display: inline-block; padding: 13px 32px; font-family: 'Inter', sans-serif;
+  font-weight: 700; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+  background: transparent; color: var(--ink); border: 1.5px solid var(--border);
+  border-radius: 6px; cursor: pointer; transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--teal-light); border-color: var(--teal); color: var(--teal); }
+.btn-amber {
+  display: inline-block; padding: 13px 32px; font-family: 'Inter', sans-serif;
+  font-weight: 700; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+  background: var(--amber); color: white; border: none; border-radius: 6px; cursor: pointer;
+  box-shadow: 0 3px 12px rgba(192,112,40,0.3); transition: all 0.2s;
+}
+.btn-amber:hover { background: #a85e1e; transform: translateY(-1px); }
+.btn-ghost {
+  display: inline-block; padding: 12px 28px; font-family: 'Inter', sans-serif;
+  font-weight: 700; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+  background: transparent; color: white; border: 1.5px solid rgba(255,255,255,0.4);
+  border-radius: 6px; cursor: pointer; transition: all 0.2s;
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.1); }
+
+/* SECTION CONTAINERS */
+.section { padding: 72px 64px; }
+.section-sm { padding: 48px 64px; }
+.container { max-width: 1200px; margin: 0 auto; }
+.section-label {
+  font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.16em; color: var(--teal); margin-bottom: 10px;
+}
+.section-title { font-size: 2rem; margin-bottom: 14px; }
+.section-sub { font-size: 0.88rem; color: #4a5568; line-height: 1.7; max-width: 560px; }
+
+/* CARDS */
+.card {
+  background: white; border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; transition: all 0.3s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(13,27,42,0.12); }
+.card-img { width: 100%; height: 210px; object-fit: cover; filter: saturate(0.83); transition: all 0.4s; }
+.card:hover .card-img { filter: saturate(1); transform: scale(1.04); }
+.card-img-wrap { overflow: hidden; height: 210px; }
+.card-body { padding: 22px; }
+.card-tag {
+  font-family: 'Inter', sans-serif; font-size: 0.56rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.14em; color: var(--teal);
+  background: var(--teal-light); padding: 4px 10px; border-radius: 3px; display: inline-block; margin-bottom: 10px;
+}
+.card-title { font-size: 1.05rem; margin-bottom: 8px; }
+.card-desc { font-size: 0.8rem; color: #4a5568; line-height: 1.65; margin-bottom: 12px; }
+.card-list { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.card-list li { font-size: 0.75rem; color: #4a5568; display: flex; align-items: flex-start; gap: 7px; }
+.card-list li::before { content: "✓"; color: var(--teal); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.card-cta { background: var(--ink); border-color: var(--ink); }
+.card-cta:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(13,27,42,0.25); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.grid-6 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+/* STATS BAR */
+.stats-bar {
+  background: var(--teal); padding: 44px 64px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+  text-align: center;
+}
+.stat-item { padding: 8px 16px; border-right: 1px solid rgba(255,255,255,0.15); }
+.stat-item:last-child { border-right: none; }
+.stat-num { font-family: 'Raleway', sans-serif; font-size: 2.8rem; font-weight: 800; color: white; line-height: 1; }
+.stat-label { font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.65); margin-top: 6px; }
+
+/* ===========================
+   HOME PAGE
+   =========================== */
+.hero {
+  display: grid; grid-template-columns: 58% 42%; min-height: calc(100vh - 126px);
+}
+.hero-left {
+  padding: 72px 64px; display: flex; flex-direction: column; justify-content: center; gap: 0;
+  background: var(--stone);
+}
+.hero-pulse {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.16em; color: var(--teal);
+  margin-bottom: 20px;
+}
+.pulse-dot {
+  width: 8px; height: 8px; background: #22c55e; border-radius: 50%;
+  animation: pulse-anim 2s infinite;
+}
+@keyframes pulse-anim {
+  0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
+  50% { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+}
+.hero-h1 { font-size: 3rem; line-height: 1.15; margin-bottom: 18px; color: var(--ink); }
+.hero-h1 span { color: var(--teal); }
+.hero-p { font-size: 0.9rem; color: #4a5568; line-height: 1.75; margin-bottom: 28px; max-width: 480px; }
+.hero-btns { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
+.hero-trust { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; }
+.trust-item { display: flex; align-items: center; gap: 8px; }
+.trust-icon { width: 34px; height: 34px; background: var(--teal-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.trust-icon svg { width: 16px; height: 16px; color: var(--teal); }
+.trust-text strong { display: block; font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--ink); }
+.trust-text span { font-size: 0.65rem; color: #6b7280; }
+.hero-logos { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.logo-badge {
+  background: white; border: 1px solid var(--border); border-radius: 6px;
+  padding: 6px 14px; font-family: 'Raleway', sans-serif; font-size: 0.72rem; font-weight: 700; color: var(--ink);
+}
+.hero-right {
+  position: relative; overflow: hidden;
+  background: url('https://images.pexels.com/photos/34938439/pexels-photo-34938439.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat;
+}
+.hero-right-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(13,27,42,0.72) 0%, rgba(27,61,111,0.55) 100%);
+  display: flex; flex-direction: column; justify-content: flex-end; padding: 36px;
+}
+.hero-zone {
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 20px;
+}
+.hero-zone-title { font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.7); margin-bottom: 10px; }
+.hero-zone-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.zone-pill {
+  font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; padding: 5px 12px;
+  border-radius: 3px; background: white; border: 1px solid rgba(255,255,255,0.3); color: var(--ink);
+}
+.zone-pill.main { background: var(--ink); color: white; }
+
+/* URGENCE BAND */
+.urgence-band {
+  background: var(--teal); padding: 20px 64px;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+}
+.urg-left { display: flex; align-items: center; gap: 14px; }
+.urg-pulse { width: 10px; height: 10px; background: #22c55e; border-radius: 50%; animation: pulse-anim 2s infinite; flex-shrink: 0; }
+.urg-text strong { display: block; font-family: 'Raleway', sans-serif; font-size: 1rem; font-weight: 700; color: white; }
+.urg-text span { font-size: 0.75rem; color: rgba(255,255,255,0.75); }
+
+/* SERVICES SECTION */
+.services-home { padding: 72px 64px; background: var(--stone); }
+.services-home .sh-header { margin-bottom: 40px; }
+.service-card-home {
+  background: white; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all 0.3s;
+}
+.service-card-home:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(13,27,42,0.12); }
+.service-card-home:hover .card-img { filter: saturate(1); transform: scale(1.04); }
+
+/* AIDES HOME */
+.aides-home { padding: 72px 64px; background: white; }
+.aide-card {
+  background: var(--stone); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; transition: all 0.3s;
+}
+.aide-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(13,27,42,0.1); }
+.aide-icon { width: 42px; height: 42px; background: var(--teal-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+.aide-icon svg { width: 20px; height: 20px; color: var(--teal); }
+.aide-title { font-size: 0.95rem; margin-bottom: 6px; }
+.aide-amount { font-family: 'Raleway', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--amber); margin-bottom: 8px; }
+.aide-desc { font-size: 0.78rem; color: #4a5568; line-height: 1.6; }
+.aide-cta { background: var(--teal); padding: 26px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 14px; border-radius: var(--radius); }
+.aide-cta-title { font-family: 'Raleway', sans-serif; font-size: 1.2rem; font-weight: 700; color: white; }
+.aide-cta-sub { font-size: 0.78rem; color: rgba(255,255,255,0.75); }
+
+/* PARTENAIRES */
+.partenaires { padding: 40px 64px; background: var(--stone2); border-top: 1px solid var(--border); }
+.partners-row { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
+.partner-name { font-family: 'Raleway', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--ink); padding: 0 24px; }
+.partner-sep { width: 1px; height: 20px; background: var(--border); }
+
+/* ===========================
+   SERVICES PAGE
+   =========================== */
+.services-page { padding: 56px 64px; }
+
+/* ===========================
+   AIDES PAGE
+   =========================== */
+.aides-page { padding: 56px 64px; }
+.aide-card-lg {
+  background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 30px; transition: all 0.3s;
+}
+.aide-card-lg:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(13,27,42,0.1); }
+.aide-card-accent { background: var(--teal); border-color: var(--teal); }
+
+/* ===========================
+   ABOUT PAGE
+   =========================== */
+.about-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 500px; }
+.about-img { background: url('https://images.pexels.com/photos/8142983/pexels-photo-8142983.jpeg?auto=compress&cs=tinysrgb&w=700') center/cover no-repeat; filter: saturate(0.83); }
+.about-content { background: var(--ink); padding: 60px 52px; display: flex; flex-direction: column; justify-content: center; gap: 0; }
+.about-label { font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--amber); margin-bottom: 14px; }
+.about-h2 { font-size: 1.9rem; color: white; margin-bottom: 18px; line-height: 1.3; }
+.about-p { font-size: 0.82rem; color: rgba(255,255,255,0.7); line-height: 1.75; margin-bottom: 12px; }
+.about-values { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+.value-item { display: flex; align-items: flex-start; gap: 14px; }
+.value-num { font-family: 'Raleway', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--teal); opacity: 0.6; min-width: 36px; }
+.value-text strong { display: block; font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 700; color: white; margin-bottom: 3px; }
+.value-text span { font-size: 0.75rem; color: rgba(255,255,255,0.6); }
+
+/* ===========================
+   REALISATIONS PAGE
+   =========================== */
+.real-page { padding: 56px 64px; }
+.avis-section { padding: 56px 64px; background: var(--stone2); }
+.avis-invite { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 48px; text-align: center; max-width: 520px; margin: 0 auto; }
+.avis-invite h3 { font-size: 1.3rem; margin-bottom: 10px; }
+.avis-invite p { font-size: 0.82rem; color: #4a5568; margin-bottom: 24px; line-height: 1.65; }
+
+/* ===========================
+   CONTACT PAGE
+   =========================== */
+.contact-page { padding: 56px 64px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.contact-form-wrap { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
+.form-group { margin-bottom: 18px; }
+label { display: block; font-family: 'Inter', sans-serif; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink); margin-bottom: 7px; }
+input, select, textarea {
+  width: 100%; padding: 11px 14px; font-family: 'Inter', sans-serif; font-size: 0.82rem;
+  border: 1.5px solid var(--border); border-radius: 6px; background: var(--stone);
+  color: var(--ink); outline: none; transition: border-color 0.2s;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--teal); background: white; }
+textarea { resize: vertical; min-height: 110px; }
+.contact-info { display: flex; flex-direction: column; gap: 24px; }
+.info-card { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.info-card-title { font-size: 0.75rem; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal); margin-bottom: 14px; }
+.info-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+.info-row svg { width: 15px; height: 15px; color: var(--teal); flex-shrink: 0; margin-top: 2px; }
+.info-row span { font-size: 0.8rem; color: #4a5568; line-height: 1.55; }
+.info-row a { color: var(--teal); font-weight: 600; }
+.map-wrap { border-radius: 8px; overflow: hidden; }
+.map-wrap iframe { width: 100%; height: 200px; border: none; }
+.horaires-list { display: flex; flex-direction: column; gap: 6px; }
+.horaire-row { display: flex; justify-content: space-between; font-size: 0.76rem; color: #4a5568; }
+.horaire-row strong { color: var(--ink); font-weight: 600; }
+.badge-urgence { background: #fef2f2; border: 1px solid #fecaca; border-radius: 5px; padding: 8px 12px; font-size: 0.72rem; color: #dc2626; font-weight: 600; text-align: center; margin-top: 8px; }
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer { background: #1a2b3c; }
+.footer-grid { padding: 60px 64px; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.footer-brand .footer-name { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 800; color: white; margin-bottom: 4px; }
+.footer-brand .footer-meta { font-size: 0.65rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+.footer-brand p { font-size: 0.78rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 18px; }
+.footer-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+.footer-badge { font-family: 'Inter', sans-serif; font-size: 0.55rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; padding: 5px 10px; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; color: rgba(255,255,255,0.65); }
+.footer-col h4 { font-family: 'Raleway', sans-serif; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: white; margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col li { font-size: 0.76rem; color: rgba(255,255,255,0.55); cursor: pointer; transition: color 0.2s; }
+.footer-col li:hover { color: white; }
+.footer-bottom { padding: 18px 64px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.footer-bottom-left { font-size: 0.65rem; color: rgba(255,255,255,0.45); }
+.footer-bottom-right { font-size: 0.65rem; color: rgba(255,255,255,0.45); }
+.footer-bottom-right a { color: rgba(255,255,255,0.65); text-decoration: underline; }
+.footer-bottom-right a:hover { color: white; }
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media(max-width:960px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { height: 340px; }
+  .hero-left { padding: 52px 40px; }
+  .hero-h1 { font-size: 2.3rem; }
+  .grid-3 { grid-template-columns: repeat(2,1fr); }
+  .grid-6 { grid-template-columns: repeat(2,1fr); }
+  .about-split { grid-template-columns: 1fr; }
+  .about-img { height: 300px; }
+  .stats-bar { grid-template-columns: repeat(2,1fr); }
+  .stat-item:nth-child(2) { border-right: none; }
+  nav { display: none; }
+  .burger { display: flex; }
+  .page-header { padding: 40px 40px; }
+  .section, .services-home, .aides-home, .real-page, .aides-page, .services-page, .contact-page { padding-left: 40px; padding-right: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; padding: 44px 40px; }
+  .urgence-band { padding: 20px 40px; }
+  .stats-bar { padding: 36px 40px; }
+  .partenaires { padding: 36px 40px; }
+}
+@media(max-width:640px) {
+  header { padding: 0 20px; top: 28px; }
+  .page { padding-top: 90px; }
+  .mob-menu { top: 90px; }
+  .hero-left { padding: 36px 24px; }
+  .hero-h1 { font-size: 1.85rem; }
+  .grid-3, .grid-2, .grid-6 { grid-template-columns: 1fr; }
+  .stats-bar { grid-template-columns: repeat(2,1fr); padding: 28px 24px; }
+  .stat-num { font-size: 2.1rem; }
+  .section, .services-home, .aides-home, .real-page, .aides-page, .services-page, .contact-page { padding-left: 20px; padding-right: 20px; }
+  .page-header { padding: 32px 20px; }
+  .page-header h1, .page-header h2 { font-size: 1.6rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; padding: 32px 20px; }
+  .footer-bottom { padding: 14px 20px; flex-direction: column; align-items: flex-start; }
+  .urgence-band { flex-direction: column; align-items: flex-start; padding: 20px 20px; }
+  .about-content { padding: 36px 24px; }
+  .partenaires { padding: 28px 20px; }
+  .hero-trust { gap: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- DEMO BAR -->
+<div class="demo-bar">
+  <div class="demo-ticker">
+    <span>Aperçu gratuit — Créé par NewLook A&S — Ce site n'est pas encore en ligne — newlook-as.fr</span>
+    <span>Aperçu gratuit — Créé par NewLook A&S — Ce site n'est pas encore en ligne — newlook-as.fr</span>
+    <span>Aperçu gratuit — Créé par NewLook A&S — Ce site n'est pas encore en ligne — newlook-as.fr</span>
+  </div>
+</div>
+
+<!-- CERT BAR -->
+<div class="cert-bar">
+  <div class="cert-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+    Artisan certifié
+  </div>
+  <div class="cert-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Assurance décennale
+  </div>
+  <div class="cert-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    Urgences 7j/7
+  </div>
+  <div class="cert-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+    Devis gratuit
+  </div>
+  <div class="cert-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Nice &amp; Alpes-Maritimes
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo" onclick="goPage('home')">
+    <span class="logo-name">DUPREZ RAYMOND</span>
+    <span class="logo-sub">Chauffagiste · Nice · Alpes-Maritimes (06)</span>
+  </div>
+  <nav>
+    <button class="nav-btn active" onclick="goPage('home')">Accueil</button>
+    <button class="nav-btn" onclick="goPage('services')">Services</button>
+    <button class="nav-btn" onclick="goPage('aides')">Aides financières</button>
+    <button class="nav-btn" onclick="goPage('about')">L'artisan</button>
+    <button class="nav-btn" onclick="goPage('realisations')">Réalisations</button>
+    <button class="nav-btn" onclick="goPage('contact')">Contact</button>
+    <a href="tel:0493844411"><button class="nav-urgence">🚨 Urgence</button></a>
+    <button class="nav-devis" onclick="goPage('contact')">Devis gratuit</button>
+  </nav>
+  <div class="burger" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mob-menu">
+  <button class="mob-btn" onclick="goPage('home');closeMob()">Accueil</button>
+  <button class="mob-btn" onclick="goPage('services');closeMob()">Services</button>
+  <button class="mob-btn" onclick="goPage('aides');closeMob()">Aides financières</button>
+  <button class="mob-btn" onclick="goPage('about');closeMob()">L'artisan</button>
+  <button class="mob-btn" onclick="goPage('realisations');closeMob()">Réalisations</button>
+  <button class="mob-btn" onclick="goPage('contact');closeMob()">Contact</button>
+</div>
+
+<!-- ============================
+     PAGE ACCUEIL
+     ============================ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-pulse">
+        <div class="pulse-dot"></div>
+        Disponible 7j/7 · Nice &amp; Alpes-Maritimes
+      </div>
+      <h1 class="hero-h1">Votre <span>chauffagiste</span><br>de confiance<br>dans les <span>Alpes-Maritimes</span></h1>
+      <p class="hero-p">DUPREZ RAYMOND intervient à Nice et dans tout le département des Alpes-Maritimes pour l'installation, l'entretien et le dépannage de vos équipements de chauffage. Réactivité, transparence et qualité certifiée à chaque intervention.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="goPage('contact')">Devis gratuit</button>
+        <a href="tel:0493844411"><button class="btn-outline">📞 04 93 84 44 11</button></a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Expérience</strong>
+            <span>Artisan qualifié</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Certifié &amp; assuré</strong>
+            <span>Décennale + RC Pro</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Urgences 7j/7</strong>
+            <span>Intervention rapide</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-logos">
+        <div class="logo-badge">RGE</div>
+        <div class="logo-badge">QualiPAC</div>
+        <div class="logo-badge">MaPrimeRénov'</div>
+        <div class="logo-badge">CEE</div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-right-overlay">
+        <div class="hero-zone">
+          <div class="hero-zone-title">Zone d'intervention</div>
+          <div class="hero-zone-pills">
+            <span class="zone-pill main">Nice</span>
+            <span class="zone-pill">Antibes</span>
+            <span class="zone-pill">Cannes</span>
+            <span class="zone-pill">Cagnes-sur-Mer</span>
+            <span class="zone-pill">Menton</span>
+            <span class="zone-pill">Grasse</span>
+            <span class="zone-pill">Villeneuve-Loubet</span>
+            <span class="zone-pill">Saint-Laurent</span>
+            <span class="zone-pill">Vence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- URGENCE BAND -->
+  <div class="urgence-band">
+    <div class="urg-left">
+      <div class="urg-pulse"></div>
+      <div class="urg-text">
+        <strong>Panne de chauffage ? Intervention d'urgence à Nice</strong>
+        <span>Chauffagiste disponible 7j/7 dans les Alpes-Maritimes — Réponse rapide garantie</span>
+      </div>
+    </div>
+    <a href="tel:0493844411"><button class="btn-ghost">📞 Appeler maintenant</button></a>
+  </div>
+
+  <!-- SERVICES PRINCIPAUX -->
+  <div class="services-home">
+    <div class="sh-header">
+      <div class="section-label">Nos prestations</div>
+      <h2 class="section-title">Services de chauffage à Nice</h2>
+      <p class="section-sub">Spécialiste du chauffage dans les Alpes-Maritimes, DUPREZ RAYMOND intervient sur tous types d'équipements pour les particuliers et professionnels.</p>
+    </div>
+    <div class="grid-3">
+      <div class="service-card-home card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/8142983/pexels-photo-8142983.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Installation chaudière par chauffagiste à Nice">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Installation</span>
+          <h3 class="card-title">Installation chaudière</h3>
+          <p class="card-desc">Pose et mise en service de chaudières gaz, fioul, condensation à Nice et dans les Alpes-Maritimes.</p>
+          <ul class="card-list">
+            <li>Chaudière à condensation</li>
+            <li>Chaudière gaz naturel</li>
+            <li>Mise en conformité</li>
+            <li>Raccordement gaz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-card-home card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/34054470/pexels-photo-34054470.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Dépannage chauffage urgence Nice Alpes-Maritimes">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Urgence</span>
+          <h3 class="card-title">Dépannage &amp; urgences</h3>
+          <p class="card-desc">Intervention d'urgence pour panne de chauffage à Nice, 7 jours sur 7, toute l'année.</p>
+          <ul class="card-list">
+            <li>Panne chaudière</li>
+            <li>Fuite circuit chauffage</li>
+            <li>Diagnostic rapide</li>
+            <li>Disponible week-end</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-card-home card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/12644994/pexels-photo-12644994.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Entretien chaudière annuel Nice chauffagiste">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Entretien</span>
+          <h3 class="card-title">Entretien annuel</h3>
+          <p class="card-desc">Contrat d'entretien chaudière obligatoire à Nice pour garantir sécurité et performance.</p>
+          <ul class="card-list">
+            <li>Nettoyage brûleur</li>
+            <li>Contrôle combustion</li>
+            <li>Attestation entretien</li>
+            <li>Conseils économies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <button class="btn-primary" onclick="goPage('services')">Voir tous nos services</button>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">+20</div>
+      <div class="stat-label">Années d'expérience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">RGE</div>
+      <div class="stat-label">Certification reconnue</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">50<span style="font-size:1.5rem">km</span></div>
+      <div class="stat-label">Rayon d'intervention</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">7j/7</div>
+      <div class="stat-label">Disponibilité urgences</div>
+    </div>
+  </div>
+
+  <!-- AIDES FINANCIÈRES -->
+  <div class="aides-home">
+    <div style="margin-bottom:40px;">
+      <div class="section-label">Économisez sur vos travaux</div>
+      <h2 class="section-title">Aides &amp; financements disponibles</h2>
+      <p class="section-sub">En tant qu'artisan certifié à Nice, DUPREZ RAYMOND vous accompagne dans vos demandes d'aides financières pour réduire le coût de vos travaux de chauffage.</p>
+    </div>
+    <div class="grid-6">
+      <div class="aide-card">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3 class="aide-title">MaPrimeRénov'</h3>
+        <div class="aide-amount">Jusqu'à 10 000€</div>
+        <p class="aide-desc">Aide de l'État pour l'installation d'équipements de chauffage performants à Nice et dans les Alpes-Maritimes.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 class="aide-title">Primes CEE</h3>
+        <div class="aide-amount">Variable</div>
+        <p class="aide-desc">Certificats d'Économies d'Énergie versés par les fournisseurs d'énergie pour vos travaux d'amélioration thermique.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="aide-title">TVA réduite</h3>
+        <div class="aide-amount">5,5%</div>
+        <p class="aide-desc">TVA à taux réduit applicable sur l'installation et la pose d'équipements de chauffage éligibles.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3 class="aide-title">Éco-PTZ</h3>
+        <div class="aide-amount">Jusqu'à 50 000€</div>
+        <p class="aide-desc">Prêt à taux zéro pour financer vos travaux de rénovation énergétique sans intérêts.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3 class="aide-title">Aides régionales</h3>
+        <div class="aide-amount">PACA</div>
+        <p class="aide-desc">Dispositifs d'aide de la région Provence-Alpes-Côte d'Azur pour les travaux de chauffage des Alpes-Maritimes.</p>
+      </div>
+      <div class="aide-cta" style="border-radius:var(--radius);">
+        <p class="aide-cta-sub" style="color:rgba(255,255,255,0.75);font-size:0.6rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;">Offre exclusive</p>
+        <h3 class="aide-cta-title">Dossier d'aides offert</h3>
+        <p class="aide-cta-sub">DUPREZ RAYMOND constitue votre dossier de demande d'aides financières gratuitement à Nice.</p>
+        <button class="btn-ghost" onclick="goPage('contact')">Profiter de l'offre</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTENAIRES -->
+  <div class="partenaires">
+    <div style="text-align:center;margin-bottom:18px;">
+      <div class="section-label" style="text-align:center;">Marques partenaires</div>
+    </div>
+    <div class="partners-row">
+      <span class="partner-name">Saunier Duval</span>
+      <div class="partner-sep"></div>
+      <span class="partner-name">Vaillant</span>
+      <div class="partner-sep"></div>
+      <span class="partner-name">De Dietrich</span>
+      <div class="partner-sep"></div>
+      <span class="partner-name">Viessmann</span>
+      <div class="partner-sep"></div>
+      <span class="partner-name">Bulex</span>
+      <div class="partner-sep"></div>
+      <span class="partner-name">Atlantic</span>
+    </div>
+  </div>
+
+</div><!-- /page-home -->
+
+<!-- ============================
+     PAGE SERVICES
+     ============================ -->
+<div id="page-services" class="page">
+  <div class="page-header">
+    <div class="ph-label">Chauffagiste Nice · Alpes-Maritimes</div>
+    <h1>Nos services de chauffage</h1>
+    <p>DUPREZ RAYMOND intervient sur tous types d'équipements de chauffage à Nice et dans les Alpes-Maritimes. Installation, entretien, dépannage : une solution pour chaque besoin.</p>
+  </div>
+  <div class="services-page">
+    <div class="grid-6" style="margin-top:0;">
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/8142983/pexels-photo-8142983.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Installation chaudière Nice chauffagiste Alpes-Maritimes">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Installation</span>
+          <h3 class="card-title">Installation chaudière</h3>
+          <p class="card-desc">Pose complète de chaudières gaz, fioul et à condensation à Nice. Mise en service et mise en conformité incluses.</p>
+          <ul class="card-list">
+            <li>Chaudière à condensation</li>
+            <li>Chaudière gaz naturel</li>
+            <li>Chaudière fioul</li>
+            <li>Raccordement réseau gaz</li>
+            <li>Certificat de conformité</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/34054470/pexels-photo-34054470.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Dépannage chauffage urgence Nice">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Urgence 7j/7</span>
+          <h3 class="card-title">Dépannage urgence</h3>
+          <p class="card-desc">Panne de chauffage à Nice ? DUPREZ RAYMOND intervient en urgence 7 jours sur 7 dans les Alpes-Maritimes.</p>
+          <ul class="card-list">
+            <li>Diagnostic panne chaudière</li>
+            <li>Réparation sur place</li>
+            <li>Fuite circuit chauffage</li>
+            <li>Intervention week-end</li>
+            <li>Devis avant réparation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1669725341213-7379ff6c90d5?q=80&w=872&auto=format&fit=crop" alt="Entretien radiateur chauffage Nice">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Rénovation</span>
+          <h3 class="card-title">Radiateurs &amp; circuits</h3>
+          <p class="card-desc">Remplacement de radiateurs, purge de circuit, rééquilibrage hydraulique pour un chauffage optimal à Nice.</p>
+          <ul class="card-list">
+            <li>Remplacement radiateurs</li>
+            <li>Purge et désembouage</li>
+            <li>Équilibrage hydraulique</li>
+            <li>Robinets thermostatiques</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1741105820127-97dd1aaafe87?q=80&w=774&auto=format&fit=crop" alt="Installation PAC pompe à chaleur Nice Alpes-Maritimes">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Pompe à chaleur</span>
+          <h3 class="card-title">PAC &amp; plancher chauffant</h3>
+          <p class="card-desc">Installation de pompes à chaleur air/eau et plancher chauffant hydraulique à Nice. Éligible MaPrimeRénov'.</p>
+          <ul class="card-list">
+            <li>PAC air/eau</li>
+            <li>Plancher chauffant</li>
+            <li>Aide MaPrimeRénov'</li>
+            <li>Bilan thermique offert</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/12644994/pexels-photo-12644994.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Entretien annuel chaudière Nice chauffagiste">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Contrat entretien</span>
+          <h3 class="card-title">Entretien annuel chaudière</h3>
+          <p class="card-desc">Entretien annuel obligatoire de votre chaudière à Nice. Attestation fournie, conforme réglementation.</p>
+          <ul class="card-list">
+            <li>Nettoyage brûleur</li>
+            <li>Contrôle étanchéité</li>
+            <li>Analyse combustion</li>
+            <li>Attestation d'entretien</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card card-cta" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:36px;">
+        <div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:12px;">Intervention rapide</div>
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:12px;">Devis gratuit<br>sous 24h à Nice</h3>
+        <p style="color:rgba(255,255,255,0.65);font-size:0.78rem;line-height:1.65;margin-bottom:24px;">Contactez DUPREZ RAYMOND pour obtenir un devis personnalisé pour tous vos travaux de chauffage dans les Alpes-Maritimes.</p>
+        <button class="btn-amber" onclick="goPage('contact')">Demander un devis</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-services -->
+
+<!-- ============================
+     PAGE AIDES & FINANCEMENTS
+     ============================ -->
+<div id="page-aides" class="page">
+  <div class="page-header">
+    <div class="ph-label">Financement travaux · Nice</div>
+    <h1>Aides &amp; financements</h1>
+    <p>DUPREZ RAYMOND, chauffagiste certifié à Nice, vous accompagne pour bénéficier de toutes les aides disponibles et réduire le coût de vos travaux de chauffage dans les Alpes-Maritimes.</p>
+  </div>
+  <div class="aides-page">
+    <div class="grid-6">
+      <div class="aide-card-lg">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <span class="card-tag">Aide de l'État</span>
+        <h3 class="aide-title" style="font-size:1.1rem;margin:10px 0 6px;">MaPrimeRénov'</h3>
+        <div class="aide-amount">Jusqu'à 10 000€</div>
+        <p class="aide-desc">Subvention de l'ANAH pour l'installation d'une pompe à chaleur, d'une chaudière à haute performance énergétique ou d'un système solaire combiné. Accessible à tous les propriétaires.</p>
+      </div>
+      <div class="aide-card-lg">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <span class="card-tag">Fournisseurs énergie</span>
+        <h3 class="aide-title" style="font-size:1.1rem;margin:10px 0 6px;">Primes CEE</h3>
+        <div class="aide-amount">Variable</div>
+        <p class="aide-desc">Les Certificats d'Économies d'Énergie permettent d'obtenir une prime directe pour vos travaux d'amélioration de l'efficacité énergétique de votre système de chauffage.</p>
+      </div>
+      <div class="aide-card-lg">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <span class="card-tag">Fiscalité</span>
+        <h3 class="aide-title" style="font-size:1.1rem;margin:10px 0 6px;">TVA réduite 5,5%</h3>
+        <div class="aide-amount">5,5%</div>
+        <p class="aide-desc">Au lieu de 20%, la TVA réduite à 5,5% s'applique sur la fourniture et la pose de chaudières à condensation, pompes à chaleur et systèmes de régulation éligibles.</p>
+      </div>
+      <div class="aide-card-lg">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <span class="card-tag">Prêt bancaire</span>
+        <h3 class="aide-title" style="font-size:1.1rem;margin:10px 0 6px;">Éco-PTZ</h3>
+        <div class="aide-amount">Jusqu'à 50 000€</div>
+        <p class="aide-desc">L'Éco-Prêt à Taux Zéro permet de financer vos travaux de rénovation énergétique sans payer d'intérêts, sur une durée pouvant aller jusqu'à 20 ans.</p>
+      </div>
+      <div class="aide-card-lg">
+        <div class="aide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        </div>
+        <span class="card-tag">Région PACA</span>
+        <h3 class="aide-title" style="font-size:1.1rem;margin:10px 0 6px;">Aides régionales</h3>
+        <div class="aide-amount">PACA</div>
+        <p class="aide-desc">La région Provence-Alpes-Côte d'Azur propose des aides complémentaires pour les travaux de rénovation énergétique des logements des Alpes-Maritimes, cumulables avec les aides nationales.</p>
+      </div>
+      <div class="aide-card-accent aide-card-lg" style="border-radius:var(--radius);">
+        <div class="aide-icon" style="background:rgba(255,255,255,0.15);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        </div>
+        <div style="font-family:'Inter',sans-serif;font-size:0.6rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.75);margin-bottom:8px;">Offre DUPREZ RAYMOND</div>
+        <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">Dossier d'aides offert</h3>
+        <div style="font-family:'Raleway',sans-serif;font-size:1.4rem;font-weight:800;color:white;margin-bottom:10px;">Gratuit</div>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.78rem;line-height:1.6;margin-bottom:20px;">DUPREZ RAYMOND prend en charge gratuitement la constitution de votre dossier de demande d'aides financières pour vos travaux de chauffage à Nice.</p>
+        <button class="btn-ghost" onclick="goPage('contact')">En profiter maintenant</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-aides -->
+
+<!-- ============================
+     PAGE L'ARTISAN
+     ============================ -->
+<div id="page-about" class="page">
+  <div class="page-header">
+    <div class="ph-label">Votre chauffagiste de confiance</div>
+    <h1>DUPREZ RAYMOND</h1>
+    <p>Chauffagiste professionnel à Nice depuis de nombreuses années, au service des particuliers et professionnels des Alpes-Maritimes.</p>
+  </div>
+  <div class="about-split">
+    <div class="about-img" role="img" aria-label="Chauffagiste DUPREZ RAYMOND à Nice Alpes-Maritimes"></div>
+    <div class="about-content">
+      <div class="about-label">Chauffagiste à Nice · 06100</div>
+      <h2 class="about-h2">Des années au service des habitants des Alpes-Maritimes</h2>
+      <p class="about-p">DUPREZ RAYMOND est un artisan chauffagiste indépendant établi à Nice (06100), reconnu dans les Alpes-Maritimes pour son sérieux, sa réactivité et la qualité de ses interventions. Il réalise l'ensemble des travaux de chauffage : installation de chaudières, dépannage, entretien et pose de pompes à chaleur.</p>
+      <p class="about-p">Certifié et assuré, il accompagne chaque client de A à Z, du diagnostic jusqu'à la réception des travaux, en passant par la constitution des dossiers d'aides financières. Son implantation à Nice lui permet d'intervenir rapidement sur tout le département.</p>
+      <div class="about-values">
+        <div class="value-item">
+          <span class="value-num">01</span>
+          <div class="value-text">
+            <strong>Transparence</strong>
+            <span>Devis détaillé et sans surprise avant chaque intervention à Nice</span>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">02</span>
+          <div class="value-text">
+            <strong>Réactivité</strong>
+            <span>Intervention rapide dans les Alpes-Maritimes, urgences 7j/7</span>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">03</span>
+          <div class="value-text">
+            <strong>Qualité certifiée</strong>
+            <span>Matériaux et équipements de marques reconnues, travaux garantis</span>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">04</span>
+          <div class="value-text">
+            <strong>Aides financières</strong>
+            <span>Dossier MaPrimeRénov' et CEE constitué gratuitement pour vous</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">+20</div>
+      <div class="stat-label">Années d'expérience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">RGE</div>
+      <div class="stat-label">Certification reconnue</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">50<span style="font-size:1.5rem">km</span></div>
+      <div class="stat-label">Rayon d'intervention</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">7j/7</div>
+      <div class="stat-label">Disponibilité urgences</div>
+    </div>
+  </div>
+</div><!-- /page-about -->
+
+<!-- ============================
+     PAGE RÉALISATIONS
+     ============================ -->
+<div id="page-realisations" class="page">
+  <div class="page-header">
+    <div class="ph-label">Nos chantiers · Nice &amp; Alpes-Maritimes</div>
+    <h1>Réalisations</h1>
+    <p>Découvrez quelques exemples de chantiers réalisés par DUPREZ RAYMOND à Nice et dans les Alpes-Maritimes.</p>
+  </div>
+  <div class="real-page">
+    <div class="grid-6">
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/9551366/pexels-photo-9551366.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Installation chaufferie Nice chaudière à condensation">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Nice · Installation</span>
+          <h3 class="card-title">Remplacement chaufferie Nice</h3>
+          <p class="card-desc">Remplacement d'une ancienne chaudière fioul par une chaudière à condensation gaz haute performance. Gain énergétique important pour ce logement du centre de Nice.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/10827343/pexels-photo-10827343.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Rénovation salle de bains chauffage Nice Alpes-Maritimes">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Antibes · Rénovation</span>
+          <h3 class="card-title">Rénovation chauffage Antibes</h3>
+          <p class="card-desc">Réfection complète du circuit de chauffage et installation de radiateurs à inertie dans une maison individuelle à Antibes. Confort thermique optimisé.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1741105820127-97dd1aaafe87?q=80&w=774&auto=format&fit=crop" alt="Installation pompe à chaleur Nice Alpes-Maritimes PAC">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Nice · PAC</span>
+          <h3 class="card-title">Installation PAC air/eau Nice</h3>
+          <p class="card-desc">Installation d'une pompe à chaleur air/eau dans une villa à Nice. Dossier MaPrimeRénov' constitué et prise en charge. Économies de 40% sur la facture de chauffage.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.pexels.com/photos/12644994/pexels-photo-12644994.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Entretien chaudière Cannes Alpes-Maritimes chauffagiste">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Cannes · Entretien</span>
+          <h3 class="card-title">Entretien annuel Cannes</h3>
+          <p class="card-desc">Contrat d'entretien annuel pour une résidence de standing à Cannes. Nettoyage, réglage combustion, contrôle étanchéité et délivrance de l'attestation réglementaire.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1669725341213-7379ff6c90d5?q=80&w=872&auto=format&fit=crop" alt="Remplacement radiateurs Cagnes-sur-Mer chauffage">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Cagnes-sur-Mer · Rénovation</span>
+          <h3 class="card-title">Radiateurs Cagnes-sur-Mer</h3>
+          <p class="card-desc">Remplacement de 8 radiateurs anciens par des modèles basse consommation à Cagnes-sur-Mer. Purge et désembouage du circuit, pose de vannes thermostatiques.</p>
+        </div>
+      </div>
+      <div class="card card-cta" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:36px;">
+        <div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:12px;">Votre projet</div>
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:12px;">Votre chantier<br>à Nice ?</h3>
+        <p style="color:rgba(255,255,255,0.65);font-size:0.78rem;line-height:1.65;margin-bottom:24px;">Contactez DUPREZ RAYMOND pour discuter de votre projet de chauffage dans les Alpes-Maritimes. Devis gratuit et personnalisé.</p>
+        <button class="btn-amber" onclick="goPage('contact')">Obtenir un devis</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVIS -->
+  <div class="avis-section">
+    <div style="text-align:center;margin-bottom:32px;">
+      <div class="section-label" style="text-align:center;">Témoignages</div>
+      <h2 class="section-title" style="text-align:center;">Donnez votre avis</h2>
+    </div>
+    <div class="avis-invite">
+      <div style="font-size:2rem;margin-bottom:14px;">⭐</div>
+      <h3>Vous êtes client de DUPREZ RAYMOND ?</h3>
+      <p>Partagez votre expérience avec notre chauffagiste à Nice sur Google. Votre avis aide d'autres particuliers des Alpes-Maritimes à faire le bon choix.</p>
+      <a href="https://www.google.com/search?q=DUPREZ+RAYMOND+chauffagiste+Nice" target="_blank" rel="noopener">
+        <button class="btn-primary">Laisser un avis sur Google</button>
+      </a>
+    </div>
+  </div>
+</div><!-- /page-realisations -->
+
+<!-- ============================
+     PAGE CONTACT
+     ============================ -->
+<div id="page-contact" class="page">
+  <div class="page-header">
+    <div class="ph-label">Contactez-nous</div>
+    <h1>Devis gratuit &amp; contact</h1>
+    <p>Chauffagiste à Nice — <a href="tel:0493844411" style="color:white;text-decoration:underline;font-weight:600;">04 93 84 44 11</a> — Réponse sous 24h</p>
+  </div>
+  <div class="contact-page">
+    <div class="contact-grid">
+      <div class="contact-form-wrap">
+        <h2 style="font-size:1.2rem;margin-bottom:24px;">Demande de devis gratuit</h2>
+        <form onsubmit="sendForm(event)">
+          <div class="form-group">
+            <label for="nom">Nom complet *</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00">
+          </div>
+          <div class="form-group">
+            <label for="type">Type d'intervention *</label>
+            <select id="type" name="type" required>
+              <option value="">Sélectionnez une prestation</option>
+              <option value="installation-chaudiere">Installation chaudière</option>
+              <option value="remplacement-chaudiere">Remplacement chaudière</option>
+              <option value="depannage-urgence">Dépannage / Urgence</option>
+              <option value="entretien-annuel">Entretien annuel</option>
+              <option value="installation-pac">Installation PAC</option>
+              <option value="plancher-chauffant">Plancher chauffant</option>
+              <option value="radiateurs">Radiateurs</option>
+              <option value="aides-financieres">Renseignements aides financières</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre besoin à Nice..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;display:block;text-align:center;">Envoyer ma demande</button>
+        </form>
+        <div id="form-success" style="display:none;margin-top:16px;background:#f0fdf4;border:1px solid #86efac;border-radius:6px;padding:14px;font-size:0.8rem;color:#166534;font-weight:600;">
+          ✓ Votre demande a bien été envoyée. DUPREZ RAYMOND vous contactera sous 24h.
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-card-title">Coordonnées</div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>36 RUE PAUL BOUNIN<br>06100 Nice</span>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13.5 19.79 19.79 0 01.02 4.82 2 2 0 012 2.69h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 10.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span><a href="tel:0493844411">04 93 84 44 11</a></span>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span><a href="mailto:frduprez@yahoo.fr">frduprez@yahoo.fr</a></span>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            <span>Nice &amp; Alpes-Maritimes (06)<br>Rayon 50 km autour de Nice</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">Horaires d'ouverture</div>
+          <div class="horaires-list">
+            <div class="horaire-row"><strong>Lundi – Vendredi</strong><span>7h30 – 18h30</span></div>
+            <div class="horaire-row"><strong>Samedi</strong><span>8h00 – 17h00</span></div>
+            <div class="horaire-row"><strong>Dimanche</strong><span>Urgences uniquement</span></div>
+          </div>
+          <div class="badge-urgence">🚨 Urgences chauffage 7j/7 — <a href="tel:0493844411">04 93 84 44 11</a></div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">Localisation</div>
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.5!2d7.2619!3d43.7102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd0106a852d31%3A0x40819a5fd979a70!2s36%20Rue%20Paul%20Bounin%2C%2006100%20Nice!5e0!3m2!1sfr!2sfr!4v1"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Localisation DUPREZ RAYMOND chauffagiste Nice"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-contact -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-name">DUPREZ RAYMOND</div>
+      <div class="footer-meta">Chauffagiste · Nice · SIRET 96970856900013</div>
+      <p>Votre chauffagiste de confiance à Nice et dans les Alpes-Maritimes. Installation, entretien et dépannage de tous vos équipements de chauffage. Disponible 7j/7.</p>
+      <div class="footer-badges">
+        <span class="footer-badge">Certifié RGE</span>
+        <span class="footer-badge">QualiPAC</span>
+        <span class="footer-badge">Décennale</span>
+        <span class="footer-badge">MaPrimeRénov'</span>
+      </div>
+    </div
