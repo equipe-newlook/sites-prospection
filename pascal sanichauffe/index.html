@@ -1,0 +1,1104 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pascal Sanichauffe – Plombier à Emmerin (59320) | Nord (59)</title>
+<meta name="description" content="Pascal Sanichauffe, votre plombier de confiance à Emmerin (59320) dans le Nord. Dépannage, installation, salle de bain, chaudière. Devis gratuit, disponible 7j/7.">
+<meta name="keywords" content="plombier Emmerin, plombier 59320, plombier Nord, dépannage plomberie Emmerin, installation sanitaire Nord, Pascal Sanichauffe">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Pascal Sanichauffe",
+  "description": "Plombier professionnel à Emmerin dans le Nord. Installation, dépannage, rénovation salle de bain, chaudière.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "42 Rue Sadi Carnot",
+    "addressLocality": "Emmerin",
+    "postalCode": "59320",
+    "addressRegion": "Nord",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33320357998",
+  "email": "pascal.sanichauffe@orange.fr",
+  "areaServed": "Nord",
+  "openingHours": ["Mo-Fr 07:30-18:30", "Sa 08:00-17:00"]
+}
+</script>
+<style>
+:root {
+  --teal:#1a5276;
+  --teal2:#0f3d5c;
+  --teal-light:#eaf3fb;
+  --amber:#2e86c1;
+  --ink:#0d1b2a;
+  --ink2:#1a2b3c;
+  --stone:#f7f8fb;
+  --stone2:#eaecf1;
+  --white:#ffffff;
+  --border:#dde2ea;
+  --radius:8px;
+  --accent:#2e86c1;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:400;color:var(--ink);background:var(--stone);line-height:1.6}
+h1,h2,h3,h4{font-family:'Raleway',sans-serif;font-weight:800;color:var(--ink)}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#f0f0f0}::-webkit-scrollbar-thumb{background:var(--teal);border-radius:3px}
+
+/* DEMO BAR */
+.demo-bar{position:fixed;top:0;left:0;right:0;height:28px;background:#991b1b;z-index:999;overflow:hidden;display:flex;align-items:center}
+.demo-ticker{white-space:nowrap;animation:ticker 18s linear infinite;color:#fff;font-family:'Inter',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.08em}
+@keyframes ticker{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+
+/* CERT BAR */
+.cert-bar{position:fixed;top:28px;left:0;right:0;height:36px;background:var(--ink);z-index:298;display:flex;align-items:center;justify-content:center;gap:32px}
+.cert-bar-item{display:flex;align-items:center;gap:7px;font-family:'Inter',sans-serif;font-size:0.6rem;font-weight:600;color:rgba(255,255,255,.75);letter-spacing:0.12em;text-transform:uppercase}
+.cert-bar-item svg{width:14px;height:14px;fill:var(--amber)}
+@media(max-width:640px){.cert-bar{display:none}}
+
+/* HEADER */
+header{position:fixed;top:64px;left:0;right:0;height:68px;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:300;display:flex;align-items:center;padding:0 32px;gap:24px}
+.logo-wrap{display:flex;flex-direction:column;line-height:1.1;min-width:fit-content}
+.logo-name{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);letter-spacing:0.02em}
+.logo-sub{font-family:'Inter',sans-serif;font-size:0.55rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.16em}
+nav{display:flex;align-items:center;gap:4px;margin-left:auto}
+nav button{background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:0.63rem;font-weight:600;color:var(--ink);text-transform:uppercase;letter-spacing:0.1em;padding:8px 12px;border-radius:6px;transition:all .2s}
+nav button:hover,nav button.active{background:var(--teal-light);color:var(--teal)}
+.btn-urgence{background:#dc2626!important;color:#fff!important;padding:8px 14px!important;border-radius:6px}
+.btn-urgence:hover{background:#b91c1c!important}
+.btn-devis-header{background:var(--teal)!important;color:#fff!important;padding:8px 16px!important;border-radius:6px}
+.btn-devis-header:hover{background:var(--teal2)!important}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);transition:.3s;border-radius:2px}
+@media(max-width:960px){nav .nav-links{display:none}.burger{display:flex}}
+
+/* MOBILE MENU */
+.mob-menu{position:fixed;top:132px;left:0;right:0;bottom:0;background:var(--ink);z-index:400;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transform:translateX(100%);transition:transform .3s ease}
+.mob-menu.open{transform:translateX(0)}
+.mob-menu button{background:none;border:none;cursor:pointer;font-family:'Raleway',sans-serif;font-size:1.4rem;font-weight:700;color:#fff;letter-spacing:0.04em}
+.mob-menu button:hover{color:var(--amber)}
+.mob-menu .mob-tel{font-family:'Inter',sans-serif;font-size:0.75rem;font-weight:600;color:var(--amber);letter-spacing:0.1em;text-transform:uppercase;margin-top:24px}
+
+/* MAIN OFFSET */
+main{padding-top:132px}
+.page{display:none}
+.page.active{display:block}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:13px 32px;font-family:'Inter',sans-serif;font-weight:700;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;border-radius:6px;cursor:pointer;border:none;transition:all .2s}
+.btn-primary{background:var(--teal);color:#fff;box-shadow:0 4px 14px rgba(26,82,118,.3)}
+.btn-primary:hover{background:var(--teal2);transform:translateY(-1px)}
+.btn-outline{background:transparent;border:1.5px solid var(--border);color:var(--ink)}
+.btn-outline:hover{background:var(--teal-light);border-color:var(--teal);color:var(--teal)}
+.btn-amber{background:var(--amber);color:#fff;box-shadow:0 4px 14px rgba(46,134,193,.35)}
+.btn-amber:hover{background:#2471a3;transform:translateY(-1px)}
+.btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-white{background:#fff;color:var(--teal);font-weight:700}
+.btn-white:hover{background:var(--stone2)}
+
+/* SECTION TITLES */
+.section-label{font-family:'Inter',sans-serif;font-weight:600;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--teal);display:block;margin-bottom:12px}
+.section-title{font-family:'Raleway',sans-serif;font-weight:800;font-size:2rem;color:var(--ink);line-height:1.2;margin-bottom:16px}
+.section-sub{font-size:0.9rem;color:#5a6a7a;max-width:560px}
+
+/* PAGE HEADER */
+.page-header{background:var(--ink);padding:64px 32px;text-align:center}
+.page-header .section-label{color:rgba(255,255,255,.6)}
+.page-header h1{font-family:'Raleway',sans-serif;font-weight:800;font-size:2.4rem;color:#fff;margin-bottom:12px}
+.page-header p{color:rgba(255,255,255,.7);font-size:0.95rem;max-width:560px;margin:0 auto}
+
+/* CONTAINER */
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+
+/* ═══════════ HOME ═══════════ */
+
+/* HERO */
+.hero{min-height:calc(100vh - 132px);display:grid;grid-template-columns:58% 42%;overflow:hidden;background:var(--ink)}
+.hero-left{padding:80px 56px 80px 80px;display:flex;flex-direction:column;justify-content:center;gap:24px;background:var(--ink)}
+.hero-label{display:flex;align-items:center;gap:10px;font-family:'Inter',sans-serif;font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.16em;color:rgba(255,255,255,.75)}
+.pulse-dot{width:8px;height:8px;background:#22c55e;border-radius:50%;animation:pulse-anim 1.8s ease-in-out infinite;flex-shrink:0}
+@keyframes pulse-anim{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{box-shadow:0 0 0 6px rgba(34,197,94,0)}}
+.hero h1{font-family:'Raleway',sans-serif;font-weight:800;font-size:2.8rem;color:#fff;line-height:1.15}
+.hero h1 span{color:var(--amber)}
+.hero-desc{color:rgba(255,255,255,.7);font-size:0.95rem;max-width:480px;line-height:1.7}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.hero-trust{display:flex;gap:32px;flex-wrap:wrap;padding-top:8px;border-top:1px solid rgba(255,255,255,.1)}
+.trust-item{display:flex;flex-direction:column;gap:2px}
+.trust-val{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.4rem;color:#fff}
+.trust-lbl{font-family:'Inter',sans-serif;font-size:0.58rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,.5)}
+.hero-certs{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.cert-badge{font-family:'Raleway',sans-serif;font-size:0.72rem;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:0.06em}
+.hero-right{position:relative;overflow:hidden}
+.hero-right img{width:100%;height:100%;object-fit:cover;filter:saturate(.82);transition:all .4s}
+.hero-right:hover img{filter:saturate(1) scale(1.04)}
+.hero-right-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(13,27,42,.55) 0%,rgba(13,27,42,.2) 100%)}
+.hero-zone-box{position:absolute;bottom:24px;left:24px;right:24px;background:rgba(13,27,42,.85);backdrop-filter:blur(8px);border-radius:var(--radius);padding:16px 20px;border:1px solid rgba(255,255,255,.1)}
+.hero-zone-title{font-family:'Inter',sans-serif;font-size:0.58rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,.5);margin-bottom:10px}
+.hero-zone-pills{display:flex;flex-wrap:wrap;gap:6px}
+.zpill{padding:5px 12px;border-radius:20px;font-family:'Inter',sans-serif;font-size:0.6rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em}
+.zpill-main{background:var(--teal);color:#fff}
+.zpill-light{background:rgba(255,255,255,.12);color:rgba(255,255,255,.75)}
+
+/* URGENCE BAND */
+.urgence-band{background:var(--teal);padding:18px 32px;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+.urgence-band .pulse-dot{background:#fff}
+.urgence-text{font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;letter-spacing:0.06em}
+
+/* SERVICES GRID */
+.services-section{padding:80px 0}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.service-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all .3s}
+.service-card:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(13,27,42,.12)}
+.service-card-img{height:200px;overflow:hidden}
+.service-card-img img{filter:saturate(.83);transition:all .4s;width:100%;height:100%;object-fit:cover}
+.service-card:hover .service-card-img img{filter:saturate(1);transform:scale(1.04)}
+.service-card-body{padding:24px}
+.tag{display:inline-block;font-family:'Inter',sans-serif;font-size:0.55rem;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;color:var(--teal);background:var(--teal-light);padding:4px 10px;border-radius:4px;margin-bottom:12px}
+.service-card h3{font-family:'Raleway',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:10px}
+.service-card p{font-size:0.82rem;color:#5a6a7a;line-height:1.6;margin-bottom:14px}
+.service-card ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.service-card ul li{font-size:0.78rem;color:#5a6a7a;display:flex;align-items:flex-start;gap:8px}
+.service-card ul li::before{content:"✓";color:var(--teal);font-weight:700;flex-shrink:0;margin-top:1px}
+
+/* STATS BAR */
+.stats-bar{background:var(--teal);padding:48px 32px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:1200px;margin:0 auto;text-align:center}
+.stat-item .stat-num{font-family:'Raleway',sans-serif;font-weight:800;font-size:3rem;color:#fff;line-height:1}
+.stat-item .stat-lbl{font-family:'Inter',sans-serif;font-size:0.58rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,.65);margin-top:6px}
+
+/* AIDES SECTION */
+.aides-section{padding:80px 0;background:var(--white)}
+.aides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.aide-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:all .3s}
+.aide-card:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(13,27,42,.1)}
+.aide-card.cta-card{background:var(--teal);border-color:var(--teal)}
+.aide-card.cta-card h3{color:#fff}
+.aide-card.cta-card p{color:rgba(255,255,255,.75)}
+.aide-card.cta-card .section-label{color:rgba(255,255,255,.6)}
+.aide-icon{width:44px;height:44px;background:var(--teal-light);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.aide-icon svg{width:22px;height:22px;fill:var(--teal)}
+.aide-card h3{font-family:'Raleway',sans-serif;font-weight:700;font-size:1rem;margin-bottom:8px}
+.aide-amount{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.6rem;color:var(--teal);margin-bottom:8px}
+.aide-card p{font-size:0.8rem;color:#5a6a7a;line-height:1.6}
+
+/* ZONE INTERVENTION */
+.zone-section{padding:80px 0}
+.zone-pills-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.zone-pill{padding:7px 16px;border:1px solid var(--border);border-radius:20px;font-family:'Inter',sans-serif;font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;background:#fff;color:var(--ink)}
+.zone-pill.main{background:var(--ink);color:#fff;border-color:var(--ink)}
+.partenaires{margin-top:48px;padding-top:40px;border-top:1px solid var(--border)}
+.partenaires-label{font-family:'Inter',sans-serif;font-size:0.6rem;font-weight:600;text-transform:uppercase;letter-spacing:0.16em;color:#8899aa;margin-bottom:20px}
+.partenaires-list{display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.partenaire-name{font-family:'Raleway',sans-serif;font-size:1.1rem;font-weight:600;color:#aab4c0;padding:0 24px;border-right:1px solid var(--border)}
+.partenaire-name:first-child{padding-left:0}
+.partenaire-name:last-child{border-right:none}
+
+/* ═══════════ SERVICES PAGE ═══════════ */
+.services-page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:0;padding:64px 0}
+.service-cta-card{background:var(--ink);border:1px solid var(--ink);border-radius:var(--radius);padding:40px 28px;display:flex;flex-direction:column;justify-content:center;gap:16px;transition:all .3s}
+.service-cta-card:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(13,27,42,.25)}
+.service-cta-card span{color:rgba(255,255,255,.6);font-size:0.6rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase}
+.service-cta-card h3{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.5rem;color:#fff}
+.service-cta-card p{font-size:0.82rem;color:rgba(255,255,255,.65);line-height:1.6}
+
+/* ═══════════ AIDES PAGE ═══════════ */
+.aides-page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:64px 0}
+
+/* ═══════════ ABOUT ═══════════ */
+.about-split{display:grid;grid-template-columns:1fr 1fr;min-height:520px}
+.about-img{overflow:hidden;position:relative}
+.about-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.83);transition:all .4s}
+.about-img:hover img{filter:saturate(1);transform:scale(1.04)}
+.about-content{background:var(--ink2);padding:64px 56px;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.about-content .section-label{color:rgba(255,255,255,.5)}
+.about-content h2{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.9rem;color:#fff;line-height:1.25}
+.about-content p{font-size:0.88rem;color:rgba(255,255,255,.65);line-height:1.75}
+.values-list{display:flex;flex-direction:column;gap:16px;margin-top:8px}
+.value-item{display:flex;align-items:flex-start;gap:16px}
+.value-num{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.6rem;color:var(--amber);opacity:.6;min-width:36px;line-height:1}
+.value-text h4{font-family:'Raleway',sans-serif;font-weight:700;font-size:0.9rem;color:#fff;margin-bottom:2px}
+.value-text p{font-size:0.78rem;color:rgba(255,255,255,.5);line-height:1.5}
+
+/* ═══════════ REALISATIONS ═══════════ */
+.reals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:64px 0 32px}
+.real-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all .3s}
+.real-card:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(13,27,42,.12)}
+.real-card-img{height:220px;overflow:hidden}
+.real-card-img img{filter:saturate(.82);transition:all .4s;width:100%;height:100%;object-fit:cover}
+.real-card:hover .real-card-img img{filter:saturate(1);transform:scale(1.04)}
+.real-card-body{padding:20px}
+.real-card h3{font-family:'Raleway',sans-serif;font-weight:700;font-size:1rem;margin:10px 0 8px}
+.real-card p{font-size:0.8rem;color:#5a6a7a;line-height:1.6}
+.avis-section{background:var(--ink);padding:64px 32px;text-align:center;margin-bottom:0}
+.avis-section h2{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.8rem;color:#fff;margin-bottom:12px}
+.avis-section p{color:rgba(255,255,255,.65);font-size:0.9rem;margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto}
+
+/* ═══════════ CONTACT ═══════════ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:64px 0}
+.contact-form-wrap{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:40px}
+.contact-form-wrap h2{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.5rem;margin-bottom:24px}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-family:'Inter',sans-serif;font-size:0.65rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink);margin-bottom:8px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:6px;font-family:'Inter',sans-serif;font-size:0.85rem;color:var(--ink);background:#fff;transition:border-color .2s;outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--teal)}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-group select{cursor:pointer}
+.contact-info{display:flex;flex-direction:column;gap:24px}
+.info-block{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.info-block h3{font-family:'Raleway',sans-serif;font-weight:700;font-size:1rem;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.info-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}
+.info-row:last-child{margin-bottom:0}
+.info-icon{width:32px;height:32px;background:var(--teal-light);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.info-icon svg{width:16px;height:16px;fill:var(--teal)}
+.info-text{font-size:0.82rem;color:#5a6a7a;line-height:1.5}
+.info-text strong{color:var(--ink);display:block;font-size:0.85rem}
+.horaires-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.horaire-row{font-size:0.78rem;color:#5a6a7a}
+.horaire-row span{font-weight:600;color:var(--ink)}
+.map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+.map-wrap iframe{width:100%;height:220px;border:none;display:block}
+.form-success{display:none;background:var(--teal-light);border:1px solid var(--teal);border-radius:6px;padding:16px;font-size:0.85rem;color:var(--teal);font-weight:600;margin-top:16px;text-align:center}
+
+/* ═══════════ FOOTER ═══════════ */
+footer{background:#1a2b3c;color:rgba(255,255,255,.65)}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;max-width:1200px;margin:0 auto;padding:64px 32px 40px}
+.footer-col h4{font-family:'Raleway',sans-serif;font-weight:700;font-size:0.95rem;color:#fff;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-col p{font-size:0.8rem;line-height:1.7;margin-bottom:16px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul li a{font-size:0.8rem;color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
+.footer-col ul li a:hover{color:#fff}
+.footer-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.footer-badge{font-family:'Inter',sans-serif;font-size:0.58rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;padding:5px 10px;border:1px solid rgba(255,255,255,.2);border-radius:4px;color:rgba(255,255,255,.55)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 32px;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.72rem;color:rgba(255,255,255,.4)}
+.footer-credit{font-size:0.72rem;color:rgba(255,255,255,.4)}
+.footer-credit a{color:var(--amber);font-weight:600}
+.footer-credit a:hover{color:#fff}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-right{height:320px}
+  .hero-left{padding:56px 40px}
+  .hero h1{font-size:2.2rem}
+  .services-grid,.services-page-grid,.aides-grid,.aides-page-grid,.reals-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .about-split{grid-template-columns:1fr}
+  .about-img{height:300px}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  main{padding-top:96px}
+  header{top:28px;padding:0 20px;height:68px}
+  .hero-left{padding:40px 24px}
+  .hero h1{font-size:1.8rem}
+  .hero-trust{gap:20px}
+  .services-grid,.services-page-grid,.aides-grid,.aides-page-grid,.reals-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .about-content{padding:40px 28px}
+  .section-title{font-size:1.6rem}
+  .container{padding:0 20px}
+  .footer-grid{grid-template-columns:1fr;padding:40px 20px 24px}
+  .footer-bottom{flex-direction:column;text-align:center;padding:16px 20px}
+  .contact-form-wrap{padding:24px}
+  .aides-section,.services-section,.zone-section{padding:56px 0}
+  .page-header{padding:48px 20px}
+  .page-header h1{font-size:1.8rem}
+}
+</style>
+</head>
+<body>
+
+<!-- DEMO BAR -->
+<div class="demo-bar">
+  <div class="demo-ticker">Aperçu gratuit — Créé par NewLook A&S — Ce site n'est pas encore en ligne — newlook-as.fr &nbsp;&nbsp;&nbsp; Aperçu gratuit — Créé par NewLook A&S — Ce site n'est pas encore en ligne — newlook-as.fr &nbsp;&nbsp;&nbsp; Aperçu gratuit — Créé par NewLook A&S — Ce site n'est pas encore en ligne — newlook-as.fr</div>
+</div>
+
+<!-- CERT BAR -->
+<div class="cert-bar">
+  <div class="cert-bar-item">
+    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    Artisan qualifié
+  </div>
+  <div class="cert-bar-item">
+    <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Assuré RC Pro
+  </div>
+  <div class="cert-bar-item">
+    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Emmerin · Nord (59)
+  </div>
+  <div class="cert-bar-item">
+    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Garantie décennale
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-wrap" onclick="goPage('home')" style="cursor:pointer">
+    <div class="logo-name">Pascal Sanichauffe</div>
+    <div class="logo-sub">Plombier · Emmerin · Nord (59320)</div>
+  </div>
+  <nav>
+    <div class="nav-links" style="display:flex;align-items:center;gap:4px">
+      <button class="active" onclick="goPage('home')">Accueil</button>
+      <button onclick="goPage('services')">Services</button>
+      <button onclick="goPage('aides')">Aides financières</button>
+      <button onclick="goPage('about')">L'artisan</button>
+      <button onclick="goPage('realisations')">Réalisations</button>
+      <button onclick="goPage('contact')">Contact</button>
+      <a href="tel:0320357998" class="btn btn-urgence" style="font-size:0.63rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;padding:8px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:6px">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.02z"/></svg>
+        Urgence
+      </a>
+      <button class="btn-devis-header" onclick="goPage('contact')">Devis gratuit</button>
+    </div>
+    <button class="burger" onclick="toggleMob()" id="burger-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mob-menu">
+  <button onclick="goPage('home');closeMob()">Accueil</button>
+  <button onclick="goPage('services');closeMob()">Services</button>
+  <button onclick="goPage('aides');closeMob()">Aides financières</button>
+  <button onclick="goPage('about');closeMob()">L'artisan</button>
+  <button onclick="goPage('realisations');closeMob()">Réalisations</button>
+  <button onclick="goPage('contact');closeMob()">Contact</button>
+  <a href="tel:0320357998" class="mob-tel">📞 03 20 35 79 98</a>
+</div>
+
+<main>
+
+<!-- ═══════════ PAGE ACCUEIL ═══════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-label">
+        <span class="pulse-dot"></span>
+        Disponible 7j/7 · Emmerin &amp; Nord (59)
+      </div>
+      <h1>Votre <span>plombier</span> de confiance dans le Nord</h1>
+      <p class="hero-desc">Pascal Sanichauffe intervient à Emmerin et dans toute la métropole lilloise pour vos installations, dépannages et rénovations de plomberie. Réactivité, sérieux et qualité au rendez-vous.</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary" onclick="goPage('contact')">Devis gratuit</button>
+        <a href="tel:0320357998" class="btn btn-ghost">📞 03 20 35 79 98</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <span class="trust-val">+20</span>
+          <span class="trust-lbl">Ans d'expérience</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-val">RC Pro</span>
+          <span class="trust-lbl">Assuré &amp; garanti</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-val">7j/7</span>
+          <span class="trust-lbl">Urgences</span>
+        </div>
+      </div>
+      <div class="hero-certs">
+        <span class="cert-badge">✓ Artisan qualifié</span>
+        <span class="cert-badge">✓ Garantie décennale</span>
+        <span class="cert-badge">✓ Devis gratuit</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1749532125405-70950966b0e5?w=600&q=80" alt="Plombier professionnel à Emmerin dans le Nord">
+      <div class="hero-right-overlay"></div>
+      <div class="hero-zone-box">
+        <div class="hero-zone-title">Zone d'intervention</div>
+        <div class="hero-zone-pills">
+          <span class="zpill zpill-main">Emmerin</span>
+          <span class="zpill zpill-light">Lille</span>
+          <span class="zpill zpill-light">Lomme</span>
+          <span class="zpill zpill-light">Loos</span>
+          <span class="zpill zpill-light">Seclin</span>
+          <span class="zpill zpill-light">Haubourdin</span>
+          <span class="zpill zpill-light">Villeneuve d'Ascq</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- URGENCE BAND -->
+  <div class="urgence-band">
+    <span class="pulse-dot"></span>
+    <span class="urgence-text">Dépannage urgent plomberie à Emmerin et dans le Nord — Intervention rapide 7j/7</span>
+    <a href="tel:0320357998" class="btn btn-ghost" style="font-size:0.63rem">📞 Appeler maintenant</a>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services-section">
+    <div class="container">
+      <span class="section-label">Nos prestations</span>
+      <h2 class="section-title">Services de plomberie à Emmerin</h2>
+      <p class="section-sub">De l'installation au dépannage d'urgence, Pascal Sanichauffe intervient pour tous vos besoins en plomberie dans le Nord.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?w=600&q=80" alt="Dépannage plomberie urgence Emmerin Nord">
+          </div>
+          <div class="service-card-body">
+            <span class="tag">Urgence</span>
+            <h3>Dépannage Plomberie</h3>
+            <p>Intervention rapide pour toutes vos urgences plomberie à Emmerin et alentours. Fuite, canalisation bouchée, dégât des eaux.</p>
+            <ul>
+              <li>Fuite d'eau détection &amp; réparation</li>
+              <li>Débouchage canalisation</li>
+              <li>Remplacement robinetterie</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1620653713380-7a34b773fef8?w=600&q=80" alt="Installation chaudière plombier Emmerin">
+          </div>
+          <div class="service-card-body">
+            <span class="tag">Chauffage</span>
+            <h3>Chaudière &amp; Chauffage</h3>
+            <p>Installation, remplacement et entretien de chaudières gaz, fioul ou condensation pour particuliers et professionnels dans le Nord.</p>
+            <ul>
+              <li>Installation chaudière neuve</li>
+              <li>Entretien annuel chaudière</li>
+              <li>Dépannage &amp; mise aux normes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&q=80" alt="Rénovation salle de bain plombier Emmerin Nord">
+          </div>
+          <div class="service-card-body">
+            <span class="tag">Rénovation</span>
+            <h3>Salle de Bain</h3>
+            <p>Conception et rénovation complète de votre salle de bain à Emmerin. Du carrelage aux équipements sanitaires, tout compris.</p>
+            <ul>
+              <li>Création &amp; rénovation complète</li>
+              <li>Pose baignoire &amp; douche</li>
+              <li>Installation WC &amp; vasque</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-lbl">Années d'expérience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">RC Pro</div>
+        <div class="stat-lbl">Assuré &amp; garanti</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">40 km</div>
+        <div class="stat-lbl">Rayon d'intervention</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7j/7</div>
+        <div class="stat-lbl">Urgences disponibles</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AIDES FINANCIERES -->
+  <div class="aides-section">
+    <div class="container">
+      <span class="section-label">Économisez sur vos travaux</span>
+      <h2 class="section-title">Aides &amp; financements disponibles</h2>
+      <p class="section-sub">Bénéficiez des aides de l'État pour réduire le coût de vos travaux de plomberie et de rénovation énergétique.</p>
+      <div class="aides-grid">
+        <div class="aide-card">
+          <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <span class="section-label">Aide de l'État</span>
+          <h3>MaPrimeRénov'</h3>
+          <div class="aide-amount">Jusqu'à 10 000 €</div>
+          <p>Aide pour les travaux de rénovation énergétique, incluant le remplacement de chaudière et équipements sanitaires.</p>
+        </div>
+        <div class="aide-card">
+          <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+          <span class="section-label">Certificats</span>
+          <h3>Primes CEE</h3>
+          <div class="aide-amount">Variable</div>
+          <p>Les Certificats d'Économies d'Énergie vous permettent d'obtenir des primes sur vos travaux d'amélioration énergétique.</p>
+        </div>
+        <div class="aide-card">
+          <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+          <span class="section-label">Fiscalité</span>
+          <h3>TVA réduite</h3>
+          <div class="aide-amount">5,5 %</div>
+          <p>Bénéficiez d'un taux de TVA réduit à 5,5% pour vos travaux de rénovation énergétique dans votre résidence principale.</p>
+        </div>
+        <div class="aide-card">
+          <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+          <span class="section-label">Prêt</span>
+          <h3>Éco-PTZ</h3>
+          <div class="aide-amount">Jusqu'à 50 000 €</div>
+          <p>Prêt à taux zéro pour financer vos travaux de rénovation énergétique sans avance de frais et sans intérêts.</p>
+        </div>
+        <div class="aide-card">
+          <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+          <span class="section-label">Collectivités</span>
+          <h3>Aides régionales</h3>
+          <div class="aide-amount">Variable</div>
+          <p>La région Hauts-de-France et la Métropole Lilloise proposent des aides complémentaires pour vos travaux de rénovation.</p>
+        </div>
+        <div class="aide-card cta-card">
+          <span class="section-label">Service offert</span>
+          <h3>Dossier d'aides offert</h3>
+          <p>Pascal Sanichauffe vous accompagne gratuitement dans le montage de votre dossier d'aides financières. Profitez-en !</p>
+          <button class="btn btn-white" onclick="goPage('contact')" style="margin-top:16px">Demander mon dossier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZONE INTERVENTION -->
+  <div class="zone-section">
+    <div class="container">
+      <span class="section-label">Zone d'intervention</span>
+      <h2 class="section-title">Votre plombier dans le Nord (59)</h2>
+      <p class="section-sub">Pascal Sanichauffe intervient à Emmerin et dans toute la métropole lilloise dans un rayon de 40 km.</p>
+      <div class="zone-pills-wrap">
+        <span class="zone-pill main">Emmerin</span>
+        <span class="zone-pill">Lille</span>
+        <span class="zone-pill">Lomme</span>
+        <span class="zone-pill">Loos</span>
+        <span class="zone-pill">Seclin</span>
+        <span class="zone-pill">Haubourdin</span>
+        <span class="zone-pill">Villeneuve d'Ascq</span>
+        <span class="zone-pill">Ronchin</span>
+        <span class="zone-pill">Faches-Thumesnil</span>
+        <span class="zone-pill">Lesquin</span>
+        <span class="zone-pill">Vendeville</span>
+        <span class="zone-pill">Wahagnies</span>
+        <span class="zone-pill">Gondecourt</span>
+        <span class="zone-pill">Wavrin</span>
+      </div>
+      <div class="partenaires">
+        <div class="partenaires-label">Marques partenaires</div>
+        <div class="partenaires-list">
+          <span class="partenaire-name">Grohe</span>
+          <span class="partenaire-name">Hansgrohe</span>
+          <span class="partenaire-name">Ideal Standard</span>
+          <span class="partenaire-name">Viessmann</span>
+          <span class="partenaire-name">Vaillant</span>
+          <span class="partenaire-name">Jacob Delafon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════ PAGE SERVICES ═══════════ -->
+<div class="page" id="page-services">
+  <div class="page-header">
+    <span class="section-label">Ce que nous faisons</span>
+    <h1>Nos services de plomberie</h1>
+    <p>Toutes les prestations de plomberie à Emmerin et dans le Nord — installation, rénovation, dépannage.</p>
+  </div>
+  <div class="container">
+    <div class="services-page-grid">
+      <div class="service-card">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?w=600&q=80" alt="Dépannage plomberie urgence Emmerin">
+        </div>
+        <div class="service-card-body">
+          <span class="tag">Urgence 7j/7</span>
+          <h3>Dépannage Urgence</h3>
+          <p>Intervention rapide pour toutes urgences plomberie. Fuite d'eau, canalisation bouchée, dégât des eaux à Emmerin et dans le Nord.</p>
+          <ul>
+            <li>Détection &amp; réparation fuite</li>
+            <li>Débouchage haute pression</li>
+            <li>Réparation canalisation</li>
+            <li>Intervention sous 2h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1620653713380-7a34b773fef8?w=600&q=80" alt="Installation chaudière plombier Emmerin Nord">
+        </div>
+        <div class="service-card-body">
+          <span class="tag">Chauffage</span>
+          <h3>Chaudière &amp; Chauffage</h3>
+          <p>Installation et entretien de chaudières gaz, fioul et condensation pour particuliers et copropriétés dans le Nord.</p>
+          <ul>
+            <li>Installation chaudière neuve</li>
+            <li>Remplacement ancienne chaudière</li>
+            <li>Entretien annuel obligatoire</li>
+            <li>Dépannage &amp; mise aux normes</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&q=80" alt="Rénovation salle de bain Emmerin Nord">
+        </div>
+        <div class="service-card-body">
+          <span class="tag">Rénovation</span>
+          <h3>Salle de Bain</h3>
+          <p>Conception et rénovation complète de salles de bain. Du carrelage aux sanitaires, une prestation clé en main à Emmerin.</p>
+          <ul>
+            <li>Création &amp; rénovation complète</li>
+            <li>Pose baignoire, douche, WC</li>
+            <li>Carrelage &amp; faïence</li>
+            <li>Salle de bain PMR/seniors</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1723468354049-d5f36803ee84?w=600&q=80" alt="Installation douche à l'italienne Emmerin">
+        </div>
+        <div class="service-card-body">
+          <span class="tag">Installation</span>
+          <h3>Douche &amp; Baignoire</h3>
+          <p>Installation de douches à l'italienne, balnéo et baignoires. Conseil et pose dans le respect des normes en vigueur dans le Nord.</p>
+          <ul>
+            <li>Douche à l'italienne</li>
+            <li>Baignoire balnéo</li>
+            <li>Receveur sur mesure</li>
+            <li>Paroi &amp; porte de douche</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1714399417136-d328f3ea14c7?w=600&q=80" alt="Robinetterie et sanitaires plombier Emmerin">
+        </div>
+        <div class="service-card-body">
+          <span class="tag">Sanitaires</span>
+          <h3>Robinetterie &amp; Sanitaires</h3>
+          <p>Remplacement et installation de robinetterie, mitigeurs thermostatiques et équipements sanitaires à Emmerin.</p>
+          <ul>
+            <li>Mitigeur thermostatique</li>
+            <li>Remplacement WC &amp; lavabo</li>
+            <li>Installation lave-linge</li>
+            <li>Chauffe-eau &amp; ballon</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-cta-card">
+        <span>Besoin d'un devis ?</span>
+        <h3>Devis gratuit sous 24h</h3>
+        <p>Contactez Pascal Sanichauffe pour obtenir un devis gratuit et sans engagement pour tous vos travaux de plomberie dans le Nord.</p>
+        <button class="btn btn-amber" onclick="goPage('contact')">Demander un devis</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE AIDES ═══════════ -->
+<div class="page" id="page-aides">
+  <div class="page-header">
+    <span class="section-label">Financez vos travaux</span>
+    <h1>Aides &amp; financements</h1>
+    <p>Découvrez toutes les aides disponibles pour réduire le coût de vos travaux de plomberie et rénovation dans le Nord.</p>
+  </div>
+  <div class="container">
+    <div class="aides-page-grid">
+      <div class="aide-card">
+        <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <span class="section-label">Aide de l'État</span>
+        <h3>MaPrimeRénov'</h3>
+        <div class="aide-amount">Jusqu'à 10 000 €</div>
+        <p>Aide financière de l'État pour les travaux de rénovation énergétique. Accessible à tous les ménages pour le remplacement de chaudière et équipements sanitaires économes. Montant variable selon revenus et nature des travaux.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <span class="section-label">Énergie</span>
+        <h3>Primes CEE</h3>
+        <div class="aide-amount">Variable</div>
+        <p>Les Certificats d'Économies d'Énergie vous permettent d'obtenir des primes versées par les fournisseurs d'énergie pour vos travaux d'amélioration de la performance énergétique.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <span class="section-label">Fiscalité avantageuse</span>
+        <h3>TVA réduite à 5,5%</h3>
+        <div class="aide-amount">5,5 %</div>
+        <p>Taux de TVA réduit à 5,5% pour tous les travaux de rénovation énergétique dans votre résidence principale ou secondaire de plus de 2 ans.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <span class="section-label">Prêt sans intérêt</span>
+        <h3>Éco-PTZ</h3>
+        <div class="aide-amount">Jusqu'à 50 000 €</div>
+        <p>L'Éco-prêt à taux zéro vous permet de financer vos travaux de rénovation énergétique sans avance de trésorerie et sans payer d'intérêts. Cumulable avec MaPrimeRénov'.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <span class="section-label">Hauts-de-France</span>
+        <h3>Aides régionales</h3>
+        <div class="aide-amount">Variable</div>
+        <p>La région Hauts-de-France et la Métropole Européenne de Lille proposent des aides complémentaires pour les travaux de rénovation énergétique des logements.</p>
+      </div>
+      <div class="aide-card cta-card">
+        <span class="section-label">Inclus &amp; offert</span>
+        <h3>Dossier d'aides offert</h3>
+        <p>Pascal Sanichauffe vous accompagne gratuitement dans le montage et le suivi de votre dossier d'aides financières. Profitez au maximum des dispositifs disponibles !</p>
+        <button class="btn btn-white" onclick="goPage('contact')" style="margin-top:16px">Demander mon dossier gratuit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE L'ARTISAN ═══════════ -->
+<div class="page" id="page-about">
+  <div class="page-header">
+    <span class="section-label">Qui sommes-nous</span>
+    <h1>Pascal Sanichauffe</h1>
+    <p>Votre plombier de confiance à Emmerin depuis plus de 20 ans</p>
+  </div>
+  <div class="about-split">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1454988501794-2992f706932e?w=600&q=80" alt="Plombier Pascal Sanichauffe Emmerin Nord">
+    </div>
+    <div class="about-content">
+      <span class="section-label">L'artisan plombier</span>
+      <h2>20 ans au service des habitants du Nord</h2>
+      <p>Pascal Sanichauffe est un artisan plombier indépendant basé à Emmerin (59320), au cœur de la métropole lilloise. Fort d'une expérience de plus de 20 ans dans le secteur, il intervient pour les particuliers et professionnels sur tous types de travaux de plomberie et de chauffage.</p>
+      <p>Sa priorité : la satisfaction client. Chaque intervention est réalisée dans les règles de l'art, avec des matériaux de qualité et dans le respect des délais convenus. Pascal Sanichauffe est assuré en responsabilité civile professionnelle et garantie décennale.</p>
+      <div class="values-list">
+        <div class="value-item">
+          <span class="value-num">01</span>
+          <div class="value-text">
+            <h4>Transparence</h4>
+            <p>Devis détaillé et gratuit, sans mauvaise surprise. Les tarifs sont annoncés avant toute intervention.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">02</span>
+          <div class="value-text">
+            <h4>Réactivité</h4>
+            <p>Disponible 7j/7 pour les urgences. Intervention rapide à Emmerin et dans la métropole lilloise.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">03</span>
+          <div class="value-text">
+            <h4>Qualité certifiée</h4>
+            <p>Travaux réalisés dans le respect des normes en vigueur. Matériaux premium de grandes marques.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">04</span>
+          <div class="value-text">
+            <h4>Aides financières</h4>
+            <p>Accompagnement gratuit pour le montage de vos dossiers d'aides et subventions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-lbl">Années d'expérience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">RC Pro</div>
+        <div class="stat-lbl">Assuré &amp; garanti</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">40 km</div>
+        <div class="stat-lbl">Rayon d'intervention</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7j/7</div>
+        <div class="stat-lbl">Urgences disponibles</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE RÉALISATIONS ═══════════ -->
+<div class="page" id="page-realisations">
+  <div class="page-header">
+    <span class="section-label">Nos chantiers</span>
+    <h1>Réalisations</h1>
+    <p>Découvrez quelques-uns de nos chantiers réalisés à Emmerin et dans le Nord.</p>
+  </div>
+  <div class="container">
+    <div class="reals-grid">
+      <div class="real-card">
+        <div class="real-card-img">
+          <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&q=80" alt="Rénovation salle de bain Emmerin Nord plombier">
+        </div>
+        <div class="real-card-body">
+          <span class="tag">Rénovation</span>
+          <h3>Salle de bain — Emmerin</h3>
+          <p>Rénovation complète d'une salle de bain dans une maison individuelle. Remplacement baignoire par douche à l'italienne, nouveau carrelage et robinetterie haut de gamme.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <div class="real-card-img">
+          <img src="https://images.unsplash.com/photo-1620653713380-7a34b773fef8?w=600&q=80" alt="Installation chaudière plombier Loos Nord">
+        </div>
+        <div class="real-card-body">
+          <span class="tag">Chauffage</span>
+          <h3>Chaudière condensation — Loos</h3>
+          <p>Remplacement d'une chaudière fioul par une chaudière gaz à condensation haute efficacité. Dossier MaPrimeRénov' monté par nos soins.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <div class="real-card-img">
+          <img src="https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?w=600&q=80" alt="Dépannage fuite eau Haubourdin plombier Nord">
+        </div>
+        <div class="real-card-body">
+          <span class="tag">Dépannage</span>
+          <h3>Fuite détectée — Haubourdin</h3>
+          <p>Détection et réparation d'une fuite sous dallage dans une cuisine. Intervention en moins de 3h avec remise en état du sol.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <div class="real-card-img">
+          <img src="https://images.unsplash.com/photo-1723468354049-d5f36803ee84?w=600&q=80" alt="Douche italienne installation plombier Seclin">
+        </div>
+        <div class="real-card-body">
+          <span class="tag">Installation</span>
+          <h3>Douche à l'italienne — Seclin</h3>
+          <p>Création d'une douche à l'italienne dans une salle de bain existante. Receveur extra-plat, paroi vitrée et robinetterie thermostatique encastrée.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <div class="real-card-img">
+          <img src="https://images.unsplash.com/photo-1587527901949-ab0341697c1e?w=600&q=80" alt="Installation sanitaires WC plombier Villeneuve d'Ascq">
+        </div>
+        <div class="real-card-body">
+          <span class="tag">Sanitaires</span>
+          <h3>WC &amp; vasque — Villeneuve d'Ascq</h3>
+          <p>Installation de WC suspendus avec bâti-support et vasque design dans une salle de bain rénovée. Carrelage grand format.</p>
+        </div>
+      </div>
+      <div class="service-cta-card" style="border-radius:var(--radius);padding:40px 28px;display:flex;flex-direction:column;justify-content:center;gap:16px">
+        <span style="color:rgba(255,255,255,.6);font-size:0.6rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Votre projet</span>
+        <h3 style="font-family:'Raleway',sans-serif;font-weight:800;font-size:1.4rem;color:#fff">Confiez-nous votre chantier</h3>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,.65);line-height:1.6">Vous avez un projet de plomberie à Emmerin ou dans le Nord ? Contactez Pascal Sanichauffe pour un devis gratuit sous 24h.</p>
+        <button class="btn btn-amber" onclick="goPage('contact')">Demander un devis gratuit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVIS SECTION -->
+  <div class="avis-section">
+    <div class="container">
+      <span class="section-label" style="color:rgba(255,255,255,.5);justify-content:center;display:flex">Avis clients</span>
+      <h2>Partagez votre expérience</h2>
+      <p>Vous avez fait appel à Pascal Sanichauffe pour vos travaux de plomberie ? Laissez-nous un avis sur Google pour aider d'autres clients dans le Nord à faire leur choix.</p>
+      <a href="https://www.google.com/search?q=Pascal+Sanichauffe+plombier+Emmerin" target="_blank" rel="noopener" class="btn btn-amber">Laisser un avis Google</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE CONTACT ═══════════ -->
+<div class="page" id="page-contact">
+  <div class="page-header">
+    <span class="section-label">Nous contacter</span>
+    <h1>Demandez votre devis gratuit</h1>
+    <p>Réponse sous 24h — <a href="tel:0320357998" style="color:var(--amber);font-weight:600">03 20 35 79 98</a></p>
+  </div>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-form-wrap">
+        <h2>Votre demande</h2>
+        <form onsubmit="sendForm(event)">
+          <div class="form-group">
+            <label>Nom complet *</label>
+            <input type="text" name="nom" placeholder="Votre nom et prénom" required>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" name="email" placeholder="votre@email.fr" required>
+          </div>
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" name="telephone" placeholder="06 XX XX XX XX">
+          </div>
+          <div class="form-group">
+            <label>Type d'intervention *</label>
+            <select name="intervention" required>
+              <option value="">Sélectionnez un type d'intervention</option>
+              <option value="depannage">Dépannage urgence</option>
+              <option value="fuite">Fuite d'eau</option>
+              <option value="debouchage">Débouchage canalisation</option>
+              <option value="chaudiere">Installation / remplacement chaudière</option>
+              <option value="entretien-chaudiere">Entretien chaudière</option>
+              <option value="salle-bain">Rénovation salle de bain</option>
+              <option value="douche">Installation douche / baignoire</option>
+              <option value="sanitaires">Installation sanitaires / WC</option>
+              <option value="robinetterie">Remplacement robinetterie</option>
+              <option value="chauffe-eau">Chauffe-eau / ballon d'eau chaude</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Votre message</label>
+            <textarea name="message" placeholder="Décrivez votre projet ou votre problème de plomberie..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Envoyer ma demande</button>
+          <div class="form-success" id="form-success">✓ Merci ! Votre demande a bien été envoyée. Pascal vous contactera sous 24h.</div>
+        </form>
+      </div>
+      <div class="contact-info">
+        <div class="info-block">
+          <h3>Coordonnées</h3>
+          <div class="info-row">
+            <div class="info-icon"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="info-text"><strong>Adresse</strong>42 Rue Sadi Carnot<br>59320 Emmerin</div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.02z"/></svg></div>
+            <div class="info-text"><strong>Téléphone</strong><a href="tel:0320357998" style="color:var(--teal);font-weight:600">03 20 35 79 98</a></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="info-text"><strong>Email</strong><a href="mailto:pascal.sanichauffe@orange.fr" style="color:var(--teal);font-weight:600;font-size:0.78rem">pascal.sanichauffe@orange.fr</a></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <div class="info-text"><strong>Zone d'intervention</strong>Emmerin &amp; métropole lilloise (40 km)</div>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Horaires d'ouverture</h3>
+          <div class="horaires-grid">
+            <div class="horaire-row"><span>Lun – Ven</span></div>
+            <div class="horaire-row">7h30 – 18h30</div>
+            <div class="horaire-row"><span>Samedi</span></div>
+            <div class="horaire-row">8h00 – 17h00</div>
+            <div class="horaire-row"><span>Urgences</span></div>
+            <div class="horaire-row" style="color:#22c55e;font-weight:600">7j/7 · 24h/24</div>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=2.98,50.59,3.02,50.62&layer=mapnik&marker=50.605,3.001"
+            allowfullscreen
+            loading="lazy"
+            title="Pascal Sanichauffe plombier Emmerin Nord">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Pascal Sanichauffe</h4>
+      <p>Votre plombier de confiance à Emmerin (59320) dans le Nord. Installation, dépannage et rénovation de plomberie pour particuliers et professionnels.</p>
+      <p style="font-size:0.75rem;color:rgba(255,255,255,.4)">SIRET : 49407371100041</p>
+      <div class="footer-badges">
+        <span class="footer-badge">RC Pro</span>
+        <span class="footer-badge">Garantie décennale</span>
+        <span class="footer-badge">Artisan qualifié</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Nos services</h4>
+      <ul>
+        <li><a onclick="goPage('services')">Dépannage urgence plomberie</a></li>
+        <li><a onclick="goPage('services')">Installation chaudière</a></li>
+        <li><a onclick="goPage('services')">Rénovation salle de bain</a></li>
+        <li><a onclick="goPage('services')">Douche &amp; baignoire</a></li>
+        <li><a onclick="goPage('services')">Robinetterie &amp; sanitaires</a></li>
+        <li><a onclick="goPage('aides')">Aides financières</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a onclick="goPage('home')">Accueil</a></li>
+        <li><a onclick="goPage('services')">Services</a></li>
+        <li><a onclick="goPage('aides')">Aides &amp; financements</a></li>
+        <li><a onclick="goPage('about')">L'artisan</a></li>
+        <li><a onclick="goPage('realisations')">Réalisations</a></li>
+        <li><a onclick="goPage('contact')">Contact &amp; devis</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom" style="max-width:1200px;margin:0 auto">
+    <p>© 2025 Pascal Sanichauffe – Plombier à Emmerin (59320) – 42 Rue Sadi Carnot, 59320 Emmerin – <a href="tel:0320357998" style="color:var(--amber)">03 20 35 79 98</a></p>
+    <p class="footer-credit">Site réalisé par <a href="https://newlook-as.fr" target="_blank" rel="noopener">NewLook A&amp;S</a></p>
+  </div>
+</footer>
+
+<script>
+function goPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  var target = document.getElementById('page-' + id);
+  if (target) target.classList.add('active');
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  var map = {home:0,services:1,aides:2,about:3,realisations:4,contact:5};
+  var navBtns = document.querySelectorAll('.nav-links button');
+  if (navBtns[map[id]]) navBtns[map[id]].classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function toggleMob() {
+  var menu = document.getElementById('mob-menu');
+  menu.classList.toggle('open');
+  var burger = document.getElementById('burger-btn');
+  var spans = burger.querySelectorAll('span');
+  if (menu.classList.contains('open')) {
+    spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+  } else {
+    spans[0].style.transform = '';
+    spans[1].style.opacity = '';
+    spans[2].style.transform = '';
+  }
+}
+
+function closeMob() {
+  var menu = document.getElementById('mob-menu');
+  menu.classList.remove('open');
+  var burger = document.getElementById('burger-btn');
+  var spans = burger.querySelectorAll('span');
+  spans[0].style.transform = '';
+  spans[1].style.opacity = '';
+  spans[2].style.transform = '';
+}
+
+function sendForm(e) {
+  e.preventDefault();
+  var success = document.getElementById('form-success');
+  success.style.display = 'block';
+  e.target.reset();
+  setTimeout(function(){ success.style.display = 'none'; }, 6000);
+}
+</script>
+</body>
+</html>
+```
