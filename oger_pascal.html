@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OGER PASCAL – Plombier Nantes (44100) | Dépannage & Installation</title>
+<meta name="description" content="Pascal — plombier à Nantes et dans tout le Loire-Atlantique. Installation, entretien et dépannage. Devis gratuit. ☎ 02 28 06 00 95">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ══ RESET ══ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;line-height:1.6;overflow-x:hidden;}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{cursor:pointer;font-family:'Inter',sans-serif;}
+ul{list-style:none;}
+
+/* ══ COULEURS / TOKENS ══
+   Exactement celles du site demo.newlook-as.fr/pattou/
+   fond blanc #ffffff, sections alt #f8fafc, orange #f97316,
+   orange hover #ea6c0a, texte principal #0f172a,
+   texte muted #64748b, border #e2e8f0                       */
+:root{
+  --white:   #ffffff;
+  --bg-alt:  #f8fafc;
+  --bg-alt2: #f1f5f9;
+  --orange:  #f97316;
+  --orange-h:#ea6c0a;
+  --orange-s:rgba(249,115,22,.10);
+  --orange-b:rgba(249,115,22,.25);
+  --text:    #0f172a;
+  --muted:   #64748b;
+  --border:  #e2e8f0;
+  --radius:  12px;
+  --radius-l:20px;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);
+  --shadow:  0 4px 16px rgba(0,0,0,.08);
+  --shadow-l:0 8px 32px rgba(0,0,0,.10);
+  --font2:   'Plus Jakarta Sans',sans-serif;
+}
+
+/* ══ DEMO BANNER ══ */
+.demo-bar{
+  background:#fff7ed;
+  border-bottom:2px solid var(--orange);
+  overflow:hidden;height:38px;
+  display:flex;align-items:center;
+  position:sticky;top:0;z-index:300;
+}
+.demo-bar::before,.demo-bar::after{
+  content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none;
+}
+.demo-bar::before{left:0;background:linear-gradient(90deg,#fff7ed,transparent);}
+.demo-bar::after{right:0;background:linear-gradient(-90deg,#fff7ed,transparent);}
+.marquee-track{display:flex;animation:ticker 30s linear infinite;white-space:nowrap;}
+.marquee-item{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);padding:0 28px;}
+.marquee-sep{color:#fdba74;padding:0 6px;}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ══ TOP BADGES ══ */
+.topbar{
+  background:var(--white);border-bottom:1px solid var(--border);
+  padding:8px 24px;display:flex;align-items:center;justify-content:center;
+  gap:28px;flex-wrap:wrap;
+}
+.topbar-item{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--muted);}
+.topbar-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;flex-shrink:0;}
+
+/* ══ NAV ══ */
+.nav{
+  position:sticky;top:38px;z-index:100;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  padding:0 32px;height:64px;
+  display:flex;align-items:center;justify-content:space-between;
+  box-shadow:var(--shadow-sm);
+}
+.nav-brand{display:flex;align-items:center;gap:12px;}
+.nav-logo{
+  width:38px;height:38px;background:var(--orange);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font2);font-size:18px;font-weight:900;color:#fff;flex-shrink:0;
+}
+.nav-name{font-family:var(--font2);font-weight:800;font-size:16px;color:var(--text);}
+.nav-name span{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.04em;}
+.nav-links{display:flex;gap:2px;}
+.nav-links a{font-size:14px;font-weight:500;color:var(--muted);padding:8px 13px;border-radius:8px;transition:all .2s;}
+.nav-links a:hover{color:var(--text);background:var(--bg-alt);}
+.nav-cta{display:flex;gap:10px;align-items:center;}
+.btn-ghost{background:var(--white);border:1.5px solid var(--border);color:var(--text);padding:8px 16px;border-radius:8px;font-size:14px;font-weight:600;transition:all .2s;}
+.btn-ghost:hover{border-color:var(--orange);color:var(--orange);}
+.btn-orange{background:var(--orange);border:none;color:#fff;padding:9px 18px;border-radius:8px;font-size:14px;font-weight:700;transition:all .2s;box-shadow:0 4px 14px var(--orange-b);}
+.btn-orange:hover{background:var(--orange-h);transform:translateY(-1px);}
+.hamburger{display:none;background:none;border:none;color:var(--text);font-size:22px;padding:6px;}
+.mobile-nav{display:none;flex-direction:column;background:var(--white);border-bottom:1px solid var(--border);padding:12px 20px;position:sticky;top:102px;z-index:99;box-shadow:var(--shadow);}
+.mobile-nav.open{display:flex;}
+.mobile-nav a{padding:12px 8px;font-size:15px;font-weight:600;color:var(--muted);border-bottom:1px solid var(--border);transition:color .2s;}
+.mobile-nav a:hover{color:var(--orange);}
+.mobile-nav a:last-child{border-bottom:none;}
+.mobile-nav .btn-orange{margin-top:12px;text-align:center;display:block;border-radius:8px;}
+
+/* ══ HERO ══ */
+.hero{
+  background:linear-gradient(135deg,var(--white) 0%,#fff7ed 50%,#fff0e0 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;right:-120px;top:-80px;
+  width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(249,115,22,.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1fr 400px;gap:56px;
+  max-width:1180px;margin:0 auto;padding:80px 32px;
+  align-items:center;position:relative;z-index:1;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--orange-s);border:1px solid var(--orange-b);
+  border-radius:20px;padding:6px 14px;
+  font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);
+  margin-bottom:22px;
+}
+.hero h1{
+  font-family:var(--font2);font-size:clamp(30px,4.5vw,54px);
+  font-weight:800;line-height:1.1;margin-bottom:18px;color:var(--text);
+}
+.hero h1 em{color:var(--orange);font-style:normal;}
+.hero-sub{font-size:17px;color:var(--muted);margin-bottom:32px;max-width:480px;line-height:1.7;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;}
+.btn-hero{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--orange);color:#fff;border:none;
+  padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;
+  transition:all .25s;box-shadow:0 6px 20px var(--orange-b);
+}
+.btn-hero:hover{background:var(--orange-h);transform:translateY(-2px);}
+.btn-hero-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--white);color:var(--text);
+  border:1.5px solid var(--border);
+  padding:12px 26px;border-radius:10px;font-size:15px;font-weight:600;
+  transition:all .25s;
+}
+.btn-hero-ghost:hover{border-color:var(--orange);color:var(--orange);}
+.hero-badges{
+  display:flex;gap:18px;flex-wrap:wrap;
+  border-top:1px solid var(--border);padding-top:28px;
+}
+.hero-badge{font-size:13px;font-weight:600;color:var(--muted);display:flex;align-items:center;gap:6px;}
+.hero-badge::before{content:'✓';color:var(--orange);font-weight:800;}
+
+/* Hero card */
+.hero-card{
+  background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-l);
+  padding:28px;box-shadow:var(--shadow-l);
+}
+.hero-card-title{font-family:var(--font2);font-size:17px;font-weight:700;color:var(--text);margin-bottom:18px;}
+.urgency-band{
+  background:#fff7ed;border:1px solid var(--orange-b);border-radius:10px;
+  padding:12px 14px;margin-bottom:18px;
+  display:flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:600;color:var(--orange);
+}
+.hero-zones{display:flex;flex-direction:column;gap:0;margin-bottom:22px;}
+.hero-zones li{
+  display:flex;align-items:center;gap:8px;
+  font-size:14px;color:var(--muted);
+  padding:8px 0;border-bottom:1px solid var(--border);
+}
+.hero-zones li::before{content:'📍';font-size:12px;}
+.hero-zones li:last-child{border-bottom:none;}
+.hero-card-cta{
+  width:100%;background:var(--orange);color:#fff;border:none;
+  padding:13px;border-radius:10px;font-size:15px;font-weight:700;
+  transition:all .2s;box-shadow:0 4px 14px var(--orange-b);
+}
+.hero-card-cta:hover{background:var(--orange-h);}
+
+/* ══ URGENCY STRIP ══ */
+.urgency-strip{
+  background:#fff7ed;border-top:1px solid #fed7aa;border-bottom:1px solid #fed7aa;
+  padding:14px 32px;display:flex;align-items:center;
+  justify-content:space-between;flex-wrap:wrap;gap:12px;
+}
+.urgency-text{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--text);}
+
+/* ══ SECTIONS ══ */
+.section{padding:88px 32px;}
+.section-alt{background:var(--bg-alt);}
+.section-alt2{background:var(--bg-alt2);}
+.section-inner{max-width:1180px;margin:0 auto;}
+.section-eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--orange-s);border:1px solid var(--orange-b);
+  border-radius:20px;padding:5px 14px;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);
+  margin-bottom:14px;
+}
+.section-title{font-family:var(--font2);font-size:clamp(22px,3.2vw,38px);font-weight:800;color:var(--text);margin-bottom:12px;line-height:1.2;}
+.section-sub{font-size:16px;color:var(--muted);max-width:500px;line-height:1.7;}
+
+/* ══ SERVICES ══ */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;}
+.service-card{
+  background:var(--white);border:1.5px solid var(--border);
+  border-radius:var(--radius-l);overflow:hidden;
+  transition:all .25s;box-shadow:var(--shadow-sm);
+}
+.service-card:hover{transform:translateY(-4px);border-color:var(--orange);box-shadow:var(--shadow-l);}
+.service-card img{width:100%;height:200px;object-fit:cover;}
+.service-card-body{padding:22px;}
+.service-tag{
+  display:inline-block;background:var(--orange-s);color:var(--orange);
+  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:4px 10px;border-radius:6px;margin-bottom:10px;
+}
+.service-card-body h3{font-family:var(--font2);font-size:17px;font-weight:700;color:var(--text);margin-bottom:8px;}
+.service-card-body p{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:12px;}
+.service-card-body ul{display:flex;flex-direction:column;gap:6px;}
+.service-card-body ul li{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px;}
+.service-card-body ul li::before{content:'→';color:var(--orange);font-weight:700;flex-shrink:0;}
+
+/* ══ STATS ══ */
+.stats-bar{background:var(--orange);padding:44px 32px;}
+.stats-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+.stat-num{font-family:var(--font2);font-size:40px;font-weight:800;color:#fff;}
+.stat-lbl{font-size:12px;color:rgba(255,255,255,.8);font-weight:600;margin-top:4px;text-transform:uppercase;letter-spacing:.06em;}
+
+/* ══ AIDES ══ */
+.aides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:52px;}
+.aide-card{
+  background:var(--white);border:1.5px solid var(--border);
+  border-radius:var(--radius);padding:26px;
+  transition:all .2s;box-shadow:var(--shadow-sm);
+}
+.aide-card:hover{border-color:var(--orange);box-shadow:var(--shadow);}
+.aide-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;}
+.aide-source{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
+.aide-amount{font-family:var(--font2);font-size:18px;font-weight:800;color:var(--orange);}
+.aide-card h3{font-family:var(--font2);font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;}
+.aide-card p{font-size:14px;color:var(--muted);line-height:1.65;}
+.aide-card-featured{background:linear-gradient(135deg,#fff7ed,#ffe8c8);border-color:var(--orange);}
+.aide-card-featured .aide-amount{color:#16a34a;}
+
+/* ══ ZONE GRID ══ */
+.zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:52px;}
+.zone-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;}
+.zone-badge{
+  background:var(--white);border:1.5px solid var(--border);
+  border-radius:8px;padding:7px 14px;font-size:14px;font-weight:600;color:var(--text);
+  box-shadow:var(--shadow-sm);transition:all .2s;
+}
+.zone-badge:hover{border-color:var(--orange);color:var(--orange);}
+.marques-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+.marque{
+  background:var(--bg-alt);border:1px solid var(--border);
+  border-radius:6px;padding:6px 13px;font-size:13px;color:var(--muted);font-weight:500;
+}
+
+/* ══ SERVICES FULL ══ */
+.services-full{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;}
+.sf-card{
+  background:var(--white);border:1.5px solid var(--border);
+  border-radius:var(--radius-l);overflow:hidden;
+  transition:all .25s;box-shadow:var(--shadow-sm);
+}
+.sf-card:hover{border-color:var(--orange);box-shadow:var(--shadow);}
+.sf-card img{width:100%;height:220px;object-fit:cover;}
+.sf-body{padding:26px;}
+.sf-body h3{font-family:var(--font2);font-size:19px;font-weight:700;color:var(--text);margin-bottom:10px;}
+.sf-body p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:14px;}
+.sf-body ul{display:flex;flex-direction:column;gap:7px;}
+.sf-body ul li{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px;}
+.sf-body ul li::before{content:'✓';color:var(--orange);font-weight:800;flex-shrink:0;}
+.sf-cta-block{
+  background:linear-gradient(135deg,#fff7ed,#ffe8c8);
+  border:1.5px solid #fed7aa;border-radius:var(--radius-l);padding:36px;
+  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+}
+.sf-cta-block h3{font-family:var(--font2);font-size:21px;font-weight:800;color:var(--text);margin-bottom:10px;}
+.sf-cta-block p{font-size:15px;color:var(--muted);margin-bottom:24px;line-height:1.65;}
+
+/* ══ ARTISAN ══ */
+.artisan-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:52px;}
+.artisan-img-wrap{border-radius:var(--radius-l);overflow:hidden;aspect-ratio:4/3;border:1.5px solid var(--border);box-shadow:var(--shadow);}
+.artisan-img-wrap img{width:100%;height:100%;object-fit:cover;}
+.artisan-text p{font-size:16px;color:var(--muted);line-height:1.75;margin-bottom:14px;}
+.artisan-piliers{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px;}
+.pilier{background:var(--bg-alt);border:1.5px solid var(--border);border-radius:var(--radius);padding:18px;}
+.pilier-num{font-family:var(--font2);font-size:26px;font-weight:800;color:var(--orange);margin-bottom:4px;}
+.pilier h4{font-weight:700;font-size:14px;color:var(--text);margin-bottom:4px;}
+.pilier p{font-size:13px;color:var(--muted);}
+.artisan-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;}
+.artisan-stat{background:var(--bg-alt);border-radius:var(--radius);padding:18px;text-align:center;}
+.artisan-stat-num{font-family:var(--font2);font-size:32px;font-weight:800;color:var(--orange);}
+.artisan-stat-lbl{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:3px;}
+
+/* ══ RÉALISATIONS ══ */
+.real-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;}
+.real-card{
+  background:var(--white);border:1.5px solid var(--border);
+  border-radius:var(--radius-l);overflow:hidden;
+  transition:all .25s;box-shadow:var(--shadow-sm);
+}
+.real-card:hover{transform:translateY(-4px);border-color:var(--orange);box-shadow:var(--shadow-l);}
+.real-card img{width:100%;height:200px;object-fit:cover;}
+.real-body{padding:18px;}
+.real-tag{font-size:11px;font-weight:700;color:var(--orange);letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:7px;}
+.real-body h3{font-family:var(--font2);font-weight:700;font-size:15px;color:var(--text);margin-bottom:6px;}
+.real-body p{font-size:13px;color:var(--muted);line-height:1.65;}
+.real-cta-card{
+  background:linear-gradient(135deg,#fff7ed,#ffe8c8);
+  border:1.5px solid #fed7aa;border-radius:var(--radius-l);
+  padding:28px;display:flex;flex-direction:column;
+  justify-content:center;align-items:flex-start;
+}
+.real-cta-card h3{font-family:var(--font2);font-size:19px;font-weight:700;color:var(--text);margin-bottom:10px;}
+.real-cta-card p{font-size:14px;color:var(--muted);margin-bottom:20px;}
+
+/* ══ AVIS ══ */
+.avis-block{
+  background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-l);
+  padding:36px;text-align:center;max-width:600px;margin:44px auto 0;
+  box-shadow:var(--shadow-sm);
+}
+.avis-block h3{font-family:var(--font2);font-size:20px;font-weight:700;color:var(--text);margin-bottom:10px;}
+.avis-block p{font-size:15px;color:var(--muted);margin-bottom:22px;}
+.btn-avis{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--text);color:#fff;border:none;
+  padding:11px 22px;border-radius:8px;font-size:14px;font-weight:700;transition:all .2s;
+}
+.btn-avis:hover{background:#1e293b;transform:translateY(-1px);}
+
+/* ══ CONTACT ══ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:52px;}
+.contact-info{display:flex;flex-direction:column;gap:16px;}
+.info-block{
+  background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:20px;display:flex;gap:14px;align-items:flex-start;
+  box-shadow:var(--shadow-sm);transition:border-color .2s;
+}
+.info-block:hover{border-color:var(--orange);}
+.info-icon{font-size:20px;margin-top:2px;flex-shrink:0;}
+.info-block h4{font-weight:700;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;}
+.info-block p,.info-block a{font-size:15px;color:var(--text);line-height:1.6;}
+.info-block a{color:var(--orange);font-weight:600;}
+.hours-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:14px;}
+.hours-row:last-child{border-bottom:none;}
+.hours-day{font-weight:600;color:var(--text);}
+.hours-time{color:var(--orange);font-weight:600;}
+.hours-closed{color:#ef4444;font-weight:600;}
+
+/* Form */
+.form-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-l);padding:36px;box-shadow:var(--shadow);}
+.form-card h3{font-family:var(--font2);font-size:22px;font-weight:800;color:var(--text);margin-bottom:26px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.form-group{margin-bottom:16px;}
+.form-group label{display:block;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+.form-group input,.form-group textarea,.form-group select{
+  width:100%;background:var(--bg-alt);border:1.5px solid var(--border);
+  border-radius:8px;padding:11px 14px;color:var(--text);
+  font-family:'Inter',sans-serif;font-size:15px;transition:border-color .2s;
+}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--orange);background:var(--white);}
+.form-group textarea{min-height:110px;resize:vertical;}
+.form-group select option{background:var(--white);}
+.form-submit{
+  width:100%;background:var(--orange);color:#fff;border:none;
+  padding:14px;border-radius:10px;font-size:15px;font-weight:700;
+  transition:all .2s;box-shadow:0 6px 20px var(--orange-b);
+  font-family:'Inter',sans-serif;
+}
+.form-submit:hover{background:var(--orange-h);transform:translateY(-1px);}
+
+/* ══ FOOTER ══ */
+footer{background:#0f172a;color:#cbd5e1;padding:52px 32px 28px;}
+.footer-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:36px;}
+.footer-brand h3{font-family:var(--font2);font-size:19px;font-weight:800;color:#fff;margin-bottom:10px;}
+.footer-brand p{font-size:14px;color:#94a3b8;line-height:1.8;max-width:310px;}
+.footer-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;}
+.fbadge{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:6px;}
+.fbadge-default{background:#1e293b;border:1px solid #334155;color:#94a3b8;}
+.fbadge-rge{background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.35);color:#fb923c;}
+.badge-rge{display:inline-block;background:rgba(249,115,22,.1);border:1px solid var(--orange-b);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:700;color:var(--orange);margin-top:12px;}
+.footer-col h4{font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:16px;}
+.footer-col ul{display:flex;flex-direction:column;gap:9px;}
+.footer-col ul li a{font-size:14px;color:#94a3b8;transition:color .2s;}
+.footer-col ul li a:hover{color:var(--orange);}
+.footer-bottom{max-width:1180px;margin:0 auto;border-top:1px solid #1e293b;padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:#475569;}
+.footer-bottom a{color:#fb923c;font-weight:600;}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;}.hero-card{display:none;}
+  .services-grid{grid-template-columns:1fr 1fr;}
+  .real-grid{grid-template-columns:1fr 1fr;}
+  .artisan-grid{grid-template-columns:1fr;}
+  .artisan-img-wrap{aspect-ratio:16/7;}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta .btn-ghost{display:none;}.hamburger{display:block;}
+  .services-grid,.aides-grid,.services-full,.contact-grid,.zone-grid{grid-template-columns:1fr;}
+  .real-grid{grid-template-columns:1fr;}
+  .stats-inner{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .hero-grid,.section{padding:56px 18px;}
+  .form-row{grid-template-columns:1fr;}
+  .artisan-piliers,.artisan-stats{grid-template-columns:1fr 1fr;}
+  .topbar{display:none;}
+  .urgency-strip{flex-direction:column;gap:10px;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- BANDEAU DÉMO -->
+<div class="demo-bar">
+  <div class="marquee-track">
+    <span class="marquee-item">⚠️ Aperçu gratuit</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">Créé par NewLook A&S</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">Ce site n'est pas encore en ligne</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">📞 06 52 51 44 40</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">newlook-as.fr</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">⚠️ Aperçu gratuit</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">Créé par NewLook A&S</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">Ce site n'est pas encore en ligne</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">📞 06 52 51 44 40</span><span class="marquee-sep">—</span>
+    <span class="marquee-item">newlook-as.fr</span><span class="marquee-sep">—</span>
+  </div>
+</div>
+
+<!-- TOP BADGES -->
+<div class="topbar">
+  <div class="topbar-item"><span class="topbar-dot"></span>Artisan qualifié</div>
+  <div class="topbar-item"><span class="topbar-dot"></span>Assurance décennale</div>
+  <div class="topbar-item"><span class="topbar-dot"></span>Urgences 7j/7</div>
+  <div class="topbar-item"><span class="topbar-dot"></span>Devis gratuit sous 24h</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-logo">O</div>
+    <div class="nav-name">OGER PASCAL<span>Plombier · Nantes · Loire-Atlantique (44)</span></div>
+  </div>
+  <div class="nav-links">
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#aides">Aides financières</a>
+    <a href="#artisan">L'artisan</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-cta">
+    <a href="tel:0228060095" class="btn-ghost">Urgence</a>
+    <a href="#contact" class="btn-orange">Devis gratuit</a>
+  </div>
+  <button class="hamburger" onclick="document.getElementById('mnav').classList.toggle('open')">☰</button>
+</nav>
+<div class="mobile-nav" id="mnav">
+  <a href="#accueil"  onclick="document.getElementById('mnav').classList.remove('open')">Accueil</a>
+  <a href="#services" onclick="document.getElementById('mnav').classList.remove('open')">Services</a>
+  <a href="#aides"    onclick="document.getElementById('mnav').classList.remove('open')">Aides financières</a>
+  <a href="#artisan"  onclick="document.getElementById('mnav').classList.remove('open')">L'artisan</a>
+  <a href="#realisations" onclick="document.getElementById('mnav').classList.remove('open')">Réalisations</a>
+  <a href="#contact"  onclick="document.getElementById('mnav').classList.remove('open')">Contact</a>
+  <a href="tel:0228060095" class="btn-orange">📞 Appeler</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="accueil">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">🔧 Disponible 7j/7 · Nantes & Loire-Atlantique</div>
+      <h1>Votre <em>plombier</em><br>de confiance<br>en Loire-Atlantique</h1>
+      <p class="hero-sub">Pascal intervient rapidement à Nantes et dans tout le Loire-Atlantique pour l'installation, l'entretien et le dépannage de vos équipements. Devis gratuit, transparence garantie.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-hero">Devis gratuit</a>
+        <a href="tel:0228060095" class="btn-hero-ghost">📞 02 28 06 00 95</a>
+      </div>
+      <div class="hero-badges">
+        <span class="hero-badge">Expérience terrain</span>
+        <span class="hero-badge">Assurance décennale</span>
+        <span class="hero-badge">Travaux garantis</span>
+        <span class="hero-badge">Artisan local</span>
+        <span class="hero-badge">Urgences 7j/7</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-title">Zone d'intervention</div>
+      <div class="urgency-band">🚨 Panne ? Fuite ? Intervention rapide disponible</div>
+      <ul class="hero-zones"><li>Nantes (44100)</li><li>Saint-Herblain (44800)</li><li>Rezé (44400)</li><li>Orvault (44700)</li><li>Vertou (44120)</li><li>Sainte-Luce-sur-Loire (44980)</li></ul>
+      <a href="#contact"><button class="hero-card-cta">Demander un devis →</button></a>
+    </div>
+  </div>
+</section>
+
+<!-- BANDE URGENCE -->
+<div class="urgency-strip">
+  <div class="urgency-text">🔧 <span>Panne de chauffage ? Fuite ? Intervention d'urgence disponible 7j/7</span></div>
+  <span style="font-size:13px;color:var(--muted)">Pascal intervient rapidement à Nantes et dans le Loire-Atlantique</span>
+  <a href="tel:0228060095" class="btn-orange">Appeler · 02 28 06 00 95</a>
+</div>
+
+<!-- ══ SERVICES ACCUEIL ══ -->
+<section class="section" id="services-home">
+  <div class="section-inner">
+    <div class="section-eyebrow">Nos prestations</div>
+    <h2 class="section-title">Nos services de plombier</h2>
+    <p class="section-sub">Installation, entretien, dépannage — Oger prend en charge tous vos besoins à Nantes et dans le Loire-Atlantique.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&q=80" alt="Plomberie & salle de bain Nantes" loading="lazy">
+        <div class="service-card-body">
+          <span class="service-tag">Installation</span>
+          <h3>Plomberie & salle de bain</h3>
+          <p>Installation, rénovation et réparation de vos équipements sanitaires à Nantes.</p>
+          <ul><li>Salle de bain complète</li><li>Recherche de fuites</li><li>Raccordements sanitaires</li></ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1714399417136-d328f3ea14c7?w=600&q=80" alt="Dépannage Loire-Atlantique" loading="lazy">
+        <div class="service-card-body">
+          <span class="service-tag">Dépannage</span>
+          <h3>Dépannage urgence</h3>
+          <p>Intervention rapide pour toute fuite, canalisation bouchée ou panne sanitaire à Nantes.</p>
+          <ul><li>Disponible 7j/7</li><li>Diagnostic précis & rapide</li><li>Réparation sur place</li></ul>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.pexels.com/photos/10827343/pexels-photo-10827343.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Entretien Nantes" loading="lazy">
+        <div class="service-card-body">
+          <span class="service-tag">Entretien</span>
+          <h3>Chauffage & chaudières</h3>
+          <p>Entretien, dépannage et remplacement de vos chaudières et équipements de chauffage.</p>
+          <ul><li>Entretien annuel</li><li>Remplacement chaudière</li><li>Mise en service</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS ORANGES -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div><div class="stat-num">2008</div><div class="stat-lbl">Création</div></div>
+    <div><div class="stat-num">500+</div><div class="stat-lbl">Chantiers réalisés</div></div>
+    <div><div class="stat-num">30km</div><div class="stat-lbl">Rayon d'intervention</div></div>
+    <div><div class="stat-num">7j/7</div><div class="stat-lbl">Urgences disponibles</div></div>
+  </div>
+</div>
+
+<!-- ══ AIDES ══ -->
+<section class="section section-alt" id="aides">
+  <div class="section-inner">
+    <div class="section-eyebrow">Économisez sur vos travaux</div>
+    <h2 class="section-title">Aides financières disponibles</h2>
+    <p class="section-sub">Profitez des dispositifs d'aide de l'État pour financer vos travaux. Oger vous accompagne dans toutes vos démarches.</p>
+    <div class="aides-grid">
+      <div class="aide-card">
+        <div class="aide-header"><span class="aide-source">État & ANAH</span><span class="aide-amount">Jusqu'à 10 000€</span></div>
+        <h3>MaPrimeRénov'</h3>
+        <p>Aide directe de l'État pour le remplacement de votre système de chauffage par une solution plus performante.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-header"><span class="aide-source">Certificats d'Économies d'Énergie</span><span class="aide-amount">Variable</span></div>
+        <h3>Primes CEE</h3>
+        <p>Obtenez des primes versées par les fournisseurs d'énergie pour la réalisation de travaux d'économies d'énergie.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-header"><span class="aide-source">Fiscalité avantageuse</span><span class="aide-amount">5,5%</span></div>
+        <h3>TVA réduite</h3>
+        <p>Bénéficiez d'une TVA à taux réduit de 5,5% sur vos travaux de rénovation énergétique dans votre résidence principale.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-header"><span class="aide-source">Prêt à taux zéro</span><span class="aide-amount">Jusqu'à 50 000€</span></div>
+        <h3>Éco-PTZ</h3>
+        <p>Empruntez sans intérêts pour financer vos travaux d'amélioration énergétique de votre logement.</p>
+      </div>
+      <div class="aide-card">
+        <div class="aide-header"><span class="aide-source">Collectivités locales</span><span class="aide-amount">Variables</span></div>
+        <h3>Aides régionales</h3>
+        <p>La région et le département 44 proposent des aides complémentaires selon votre situation.</p>
+      </div>
+      <div class="aide-card aide-card-featured">
+        <div class="aide-header"><span class="aide-source">Service Oger</span><span class="aide-amount">Offert</span></div>
+        <h3>Dossier d'aides offert</h3>
+        <p>Nous constituons votre dossier de demande d'aides financières gratuitement pour chaque chantier réalisé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ZONE + SERVICES FULL ══ -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="zone-grid">
+      <div>
+        <div class="section-eyebrow">Secteur couvert</div>
+        <h2 class="section-title">Zone d'intervention</h2>
+        <p class="section-sub">Oger intervient à Nantes et dans les communes environnantes du Loire-Atlantique.</p>
+        <div class="zone-badges"><span class="zone-badge">Nantes (44100)</span><span class="zone-badge">Saint-Herblain (44800)</span><span class="zone-badge">Rezé (44400)</span><span class="zone-badge">Orvault (44700)</span><span class="zone-badge">Vertou (44120)</span><span class="zone-badge">Sainte-Luce-sur-Loire (44980)</span></div>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:8px">Marques traitées :</p>
+        <div class="marques-row"><span class="marque">De Dietrich</span><span class="marque">Viessmann</span><span class="marque">Bosch</span><span class="marque">Chaffoteaux</span><span class="marque">Saunier Duval</span><span class="marque">Atlantic</span></div>
+      </div>
+      <div>
+        <div class="section-eyebrow">Nos prestations</div>
+        <h2 class="section-title">Services complets</h2>
+        <p class="section-sub">Solutions complètes d'installation, entretien et dépannage à Nantes et dans le Loire-Atlantique.</p>
+      </div>
+    </div>
+    <div class="services-full" style="margin-top:44px">
+      <div class="sf-card">
+        <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&q=80" alt="Plomberie & salle de bain Nantes" loading="lazy">
+        <div class="sf-body">
+          <span class="service-tag">Installation</span>
+          <h3>Plomberie & salle de bain</h3>
+          <p>Installation, rénovation et dépannage de tous équipements sanitaires. Travaux soignés, devis gratuit à Nantes.</p>
+          <ul><li>Rénovation salle de bain</li><li>Sanitaires & WC</li><li>Recherche fuites</li><li>Raccordements eau</li></ul>
+        </div>
+      </div>
+      <div class="sf-card">
+        <img src="https://images.unsplash.com/photo-1714399417136-d328f3ea14c7?w=600&q=80" alt="Dépannage Loire-Atlantique" loading="lazy">
+        <div class="sf-body">
+          <span class="service-tag">Dépannage toutes marques</span>
+          <h3>Dépannage urgence</h3>
+          <p>Intervention d'urgence pour diagnostiquer et réparer toute panne sanitaire à Nantes, quelle que soit la marque.</p>
+          <ul><li>Disponible 7 jours sur 7</li><li>Toutes marques & modèles</li><li>Intervention rapide</li><li>Pièces disponibles</li></ul>
+        </div>
+      </div>
+      <div class="sf-card">
+        <img src="https://images.unsplash.com/photo-1741105820127-97dd1aaafe87?q=80&w=774&auto=format&fit=crop" alt="PAC plancher chauffant Nantes" loading="lazy">
+        <div class="sf-body">
+          <span class="service-tag">Éco-énergie</span>
+          <h3>PAC & plancher chauffant</h3>
+          <p>Solutions de chauffage renouvelable avec pompe à chaleur et plancher chauffant basse température pour un confort optimal.</p>
+          <ul><li>PAC air/air & air/eau</li><li>Plancher chauffant hydraulique</li><li>Aides financières maximisées</li><li>Bilan énergétique offert</li></ul>
+        </div>
+      </div>
+      <div class="sf-card">
+        <img src="https://images.pexels.com/photos/10827343/pexels-photo-10827343.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Entretien annuel Nantes" loading="lazy">
+        <div class="sf-body">
+          <span class="service-tag">Entretien</span>
+          <h3>Contrat d'entretien annuel</h3>
+          <p>Contrat de maintenance préventive pour assurer la longévité de votre installation et respecter vos obligations légales.</p>
+          <ul><li>Visite annuelle certifiée</li><li>Nettoyage brûleur & échangeur</li><li>Rapport légal d'entretien</li><li>Priorité dépannage incluse</li></ul>
+        </div>
+      </div>
+      <div class="sf-cta-block">
+        <h3>Oger — Nantes</h3>
+        <p>Devis gratuit sous 24h. Contactez-nous pour un devis personnalisé et sans engagement pour vos travaux.</p>
+        <a href="#contact"><button class="btn-orange">Demander un devis →</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ARTISAN ══ -->
+<section class="section section-alt" id="artisan">
+  <div class="section-inner">
+    <div class="section-eyebrow">L'équipe</div>
+    <h2 class="section-title">OGER PASCAL</h2>
+    <p class="section-sub">Votre partenaire plombier de confiance à Nantes et dans le Loire-Atlantique.</p>
+    <div class="artisan-grid">
+      <div class="artisan-img-wrap">
+        <img src="https://images.pexels.com/photos/9551366/pexels-photo-9551366.jpeg?auto=compress&cs=tinysrgb&w=700" alt="plombier Oger au travail Nantes" loading="lazy">
+      </div>
+      <div class="artisan-text">
+        <div class="section-eyebrow">Notre engagement</div>
+        <h3 style="font-family:var(--font2);font-size:clamp(20px,2.5vw,28px);font-weight:800;color:var(--text);margin-bottom:16px;">Au service des habitants du Loire-Atlantique</h3>
+        <p>L'entreprise OGER PASCAL est implantée à Nantes depuis 2008. Nous avons bâti notre réputation sur la qualité de nos interventions, la transparence de nos devis et la réactivité de notre équipe.</p>
+        <p>Artisan indépendant, Pascal réalise personnellement chaque intervention pour garantir qualité et satisfaction.</p>
+        
+        <div class="artisan-piliers">
+          <div class="pilier"><div class="pilier-num">01</div><h4>Transparence</h4><p>Devis détaillés, tarifs clairs avant toute intervention.</p></div>
+          <div class="pilier"><div class="pilier-num">02</div><h4>Réactivité</h4><p>Disponible 7j/7 pour vos urgences dans le Loire-Atlantique.</p></div>
+          <div class="pilier"><div class="pilier-num">03</div><h4>Qualité</h4><p>Artisan qualifié, matériaux professionnels, travaux garantis.</p></div>
+          <div class="pilier"><div class="pilier-num">04</div><h4>Aides</h4><p>Accompagnement complet pour maximiser vos primes.</p></div>
+        </div>
+        <div class="artisan-stats">
+          <div class="artisan-stat"><div class="artisan-stat-num">2008</div><div class="artisan-stat-lbl">Création</div></div>
+          <div class="artisan-stat"><div class="artisan-stat-num">500+</div><div class="artisan-stat-lbl">Chantiers réalisés</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ RÉALISATIONS ══ -->
+<section class="section" id="realisations">
+  <div class="section-inner">
+    <div class="section-eyebrow">Nos chantiers</div>
+    <h2 class="section-title">Réalisations</h2>
+    <p class="section-sub">Quelques interventions réalisées à Nantes et dans le Loire-Atlantique.</p>
+    <div class="real-grid">
+      
+      <div class="real-card">
+        <img src="https://images.pexels.com/photos/9551366/pexels-photo-9551366.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Remplacement chaudière maison individuelle Nantes" loading="lazy">
+        <div class="real-body">
+          <span class="real-tag">Installation · Nantes</span>
+          <h3>Remplacement chaudière maison individuelle</h3>
+          <p>Dépose de l'ancienne chaudière et installation d'une chaudière à condensation haute performance avec raccordements complets.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <img src="https://images.pexels.com/photos/10827343/pexels-photo-10827343.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Rénovation installation chauffage Nantes" loading="lazy">
+        <div class="real-body">
+          <span class="real-tag">Rénovation · Nantes</span>
+          <h3>Rénovation installation chauffage</h3>
+          <p>Remplacement intégral du réseau et mise en place d'un nouveau circulateur sur une installation ancienne.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <img src="https://images.pexels.com/photos/8142983/pexels-photo-8142983.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Contrat d'entretien annuel Nantes" loading="lazy">
+        <div class="real-body">
+          <span class="real-tag">Entretien · Nantes</span>
+          <h3>Contrat d'entretien annuel</h3>
+          <p>Mise en place d'un contrat de maintenance préventive avec visite certifiée et priorité dépannage.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <img src="https://images.unsplash.com/photo-1741105820127-97dd1aaafe87?q=80&w=774&auto=format&fit=crop" alt="Installation pompe à chaleur Nantes" loading="lazy">
+        <div class="real-body">
+          <span class="real-tag">Éco-énergie · Nantes</span>
+          <h3>Installation pompe à chaleur</h3>
+          <p>Mise en place d'une PAC air/eau avec plancher chauffant basse température, dossier MaPrimeRénov' inclus.</p>
+        </div>
+      </div>
+      <div class="real-card">
+        <img src="https://images.unsplash.com/photo-1669725341213-7379ff6c90d5?q=80&w=872&auto=format&fit=crop" alt="Pose de radiateurs Nantes" loading="lazy">
+        <div class="real-body">
+          <span class="real-tag">Équipement · Nantes</span>
+          <h3>Pose de radiateurs</h3>
+          <p>Installation de radiateurs avec équilibrage hydraulique et vannes thermostatiques programmables.</p>
+        </div>
+      </div>
+      <div class="real-cta-card">
+        <h3>Un projet plombier ?</h3>
+        <p>Demandez votre devis gratuit. Intervention rapide sur Nantes et le Loire-Atlantique.</p>
+        <a href="#contact"><button class="btn-orange">Devis gratuit sous 24h</button></a>
+      </div>
+    </div>
+    <div class="avis-block">
+      <h3>Laissez-nous un avis</h3>
+      <p>Vous avez fait appel à Oger ? Partagez votre expérience sur Google pour aider d'autres clients du Loire-Atlantique.</p>
+      <a href="https://www.google.com/search?q=OGER+PASCAL+plombier+Nantes" target="_blank" class="btn-avis">⭐ Laisser un avis Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="section section-alt" id="contact">
+  <div class="section-inner">
+    <div class="section-eyebrow">Contactez-nous</div>
+    <h2 class="section-title">Contact & Devis</h2>
+    <p class="section-sub">Appelez le <a href="tel:0228060095" style="color:var(--orange);font-weight:700">02 28 06 00 95</a> ou remplissez le formulaire pour un devis gratuit sous 24h.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-block"><span class="info-icon">📍</span><div><h4>Adresse</h4><p>71 boulevard de l'Égalité<br>44100 Nantes<br>Loire-Atlantique</p></div></div>
+        <div class="info-block"><span class="info-icon">📞</span><div><h4>Téléphone</h4><p><a href="tel:0228060095">02 28 06 00 95</a></p></div></div>
+        <div class="info-block"><span class="info-icon">✉️</span><div><h4>Email</h4><p><a href="mailto:oger.pascal@free.fr">oger.pascal@free.fr</a></p></div></div>
+        <div class="info-block"><span class="info-icon">🕐</span><div><h4>Horaires</h4>
+          <div><div class="hours-row"><span class="hours-day">Lun – Ven</span><span class="hours-time">8h00 – 18h00</span></div>
+          <div class="hours-row"><span class="hours-day">Samedi</span><span class="hours-time">8h00 – 12h00</span></div>
+          <div class="hours-row"><span class="hours-day">Urgences</span><span class="hours-time">7j/7 · 24h/24</span></div></div>
+        </div></div>
+        <div class="info-block"><span class="info-icon">🏢</span><div><h4>Légal</h4><p>SIRET : 49286006900011<br>OGER PASCAL<br>EI</p></div></div>
+      </div>
+      <div class="form-card">
+        <h3>Demande de devis gratuit</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Nom complet *</label><input type="text" placeholder="Jean Dupont"></div>
+          <div class="form-group"><label>Email *</label><input type="email" placeholder="jean@email.com"></div>
+        </div>
+        <div class="form-group"><label>Téléphone</label><input type="tel" placeholder="06 XX XX XX XX"></div>
+        <div class="form-group"><label>Code postal</label><input type="text" placeholder="44100"></div>
+        <div class="form-group"><label>Type d'intervention *</label>
+          <select>
+            <option>Sélectionner...</option>
+            <option>Installation chaudière gaz</option>
+            <option>Installation chaudière fioul</option>
+            <option>Remplacement chaudière</option>
+            <option>Dépannage / Panne chauffage</option>
+            <option>Entretien annuel chaudière</option>
+            <option>Installation pompe à chaleur</option>
+            <option>Plancher chauffant</option>
+            <option>Pose ou remplacement radiateurs</option>
+            <option>Plomberie & sanitaires</option>
+            <option>Dépannage urgent</option>
+            <option>Autre demande</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Décrivez votre projet ou besoin..."></textarea></div>
+        <button class="form-submit" onclick="this.textContent='✓ Message envoyé ! Nous vous répondrons sous 24h.';this.style.background='#22c55e'">Envoyer ma demande →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>OGER PASCAL</h3>
+      <p>Plombier professionnel à Nantes (44100). Installation, entretien et dépannage dans tout le Loire-Atlantique.</p>
+      <div class="footer-badges">
+        <span class="fbadge fbadge-default">Artisan qualifié</span>
+        <span class="fbadge fbadge-default">Assurance décennale</span>
+        
+        <span class="fbadge fbadge-default">MaPrimeRénov'</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Nos services</h4>
+      <ul>
+        <li><a href="#services">Plomberie & salle de bain</a></li>
+        <li><a href="#services">Dépannage urgence</a></li>
+        <li><a href="#services">Entretien annuel</a></li>
+        <li><a href="#services">Pompe à chaleur</a></li>
+        <li><a href="#services">Plancher chauffant</a></li>
+        <li><a href="#aides">Aides financières</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#aides">Aides & financements</a></li>
+        <li><a href="#artisan">L'artisan</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact & devis</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 OGER PASCAL – SIRET 49286006900011 · 71 boulevard de l'Égalité, 44100 Nantes · 02 28 06 00 95</span>
+    <span>Site réalisé par <a href="https://newlook-as.fr" target="_blank">NewLook A&S</a></span>
+  </div>
+</footer>
+</body>
+</html>
